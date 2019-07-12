@@ -1,0 +1,68 @@
+
+.productsbox{
+    margin-top:35px;
+    padding-right: 20px;
+}
+.navLeft{
+    background:#fff;
+    width:190px;
+    margin-right: 30px;
+    position: fixed;
+    left:0;
+    overflow-y: scroll;
+    height: 100%;
+}
+.navLeft  ul li{
+    height: 100px;
+    text-align:center;
+    font-size: 26px;
+    color:#666666;
+    line-height: 100px;
+}
+.navLeft  ul li.nowpage{
+    background:#f2f2f2
+}
+.lev2{
+    font-size: 24px;
+    color:#666
+}
+.navright{
+    width:510px;
+    position: fixed;
+    left:220px;
+    height: 100%;
+    overflow-y: scroll
+}
+.adver{
+    height: 240px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.adver img{
+    border-radius: 15px
+}
+.lev3box{
+    background:#fff;
+    padding: 15px 5px;
+    border-radius: 10px;
+}
+.lev3box li{
+    float:left;
+    width:33.3%;
+    text-align: center;
+}
+.lev3box li img{
+    width:80%;
+}
+
+.lev3box li p{
+    color:#666;
+    font-size: 24px;
+    height: 20px;
+    line-height: 20px;
+    margin:25px 0;
+}
+.lev2box>li{
+    height: 100px;
+    line-height: 100px;
+}

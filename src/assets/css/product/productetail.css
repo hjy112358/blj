@@ -1,0 +1,68 @@
+.arrow-up,.arrow-down{
+    width: 0px;
+    height: 0px;
+    font-size: 0;
+    line-height: 0;
+    border-color: #fff #fff #a5a5a5 #fff;
+    border-width: 0px 10px 10px;
+    display: inline-block;
+    border-style: solid;
+    position: relative;
+    top: -12px;
+    left: 10px;
+}
+.arrow-down {
+    border-color: #a5a5a5 #fff #fff #fff;
+    border-width: 10px 10px 0px;
+    position: relative;
+    top: 4px;
+    left: -18px;
+}
+.detailtype ul li{
+    width:32%;
+    text-align: center;
+    float:left;
+    font-size: 28px;
+    color:#adadad;
+}
+.detailtype ul li.on{
+    color:#6c6c6c
+}
+.detailtype{
+    height: 80px;
+    line-height: 80px;
+    border-bottom:1px solid #e9e9e9
+}
+.detailPro .goods_title {
+    width: 100%;
+    font-size: 28px;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 60px;
+}
+.detailPro ul li{
+    padding:20px;
+    border-bottom:10px solid #f2f2f2;
+}
+.detailPro ul li .title_box{
+    color:#2c2c2c;
+    font-size:24px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.detailPro ul li .new_price{
+    color:#ff4c4c;   
+}
+
+
+
+/* 商品详情 */
+
+.prodetailsbox .myswiper,.prodetailsbox .myswiper a{
+    height: 510px;
+    overflow: hidden;
+}

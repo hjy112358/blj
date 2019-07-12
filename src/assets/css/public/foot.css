@@ -1,0 +1,48 @@
+.foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 -2px 5px #f5f6f5;
+    background:#fff
+  }
+  .foot ul {
+    padding: 20px 45px; 
+  }
+  .foot ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  .foot ul li p {
+    font-size: 24px; 
+    color:#000
+  }
+  .foot ul li .footimg {
+    width: 31px;
+    height: 31px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .foot ul li .footimg img {
+    max-width: 100%;
+  }
+  .foot ul li.on p{
+    color:#ff4c4c
+  }
+  .foot ul li.scan {
+    background: url(../../images/public/scanbg.png) no-repeat;
+    background-position: top;
+    padding-top: 8px;
+    margin-top: -50px;
+    background-size: contain;
+  }
+  .foot ul li.scan .footimg{
+      width:64px;
+      height: 64px;
+      margin-top: 20px;
+  }
+  body{
+    padding-bottom:140px
+  }

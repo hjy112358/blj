@@ -1,0 +1,272 @@
+.my-swiper{
+     height:410px;
+     overflow: hidden;
+ }
+ .my-swiper img{
+     max-width: 100%;
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%)
+ }
+ .hello .swiper-pagination-bullet{
+     width:16px;
+     height: 16px;
+     background:#fff;
+     opacity: .6;
+     margin-right: 16px !important;
+ }
+
+ .hello .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    opacity: 1;
+ }
+ .hello  .swiper-container{
+    height:410px;
+ }
+ .hello .scrollimg .swiper-container{
+    height: 224px;
+ }
+ /* 搜索 */
+ .searchbbox{
+     position: absolute;
+     top:60px;
+     left:0;
+     z-index:3;
+     padding:0 30px;
+     height:55px;
+     line-height:55px;
+     width:100%;
+ }
+ .location span:before {
+    content: "";
+    float: left;
+    width: 22px;
+    height: 30px;
+    background: url(../../images/index/location.png) no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    margin-right:10px;
+}
+.searchbbox a{
+    font-size: 24px;
+    color:#6d6d6d;
+}
+.searchbbox input{
+    
+    border:1PX solid #ff4c4c;
+    background:rgba(255,255,255,.7);
+    border-radius: 50px;
+}
+.searchbbox .index_search_mid{
+    width:100%
+}
+.searchbbox .index_search{
+    margin-left:20px;
+    width:530px;
+
+}
+.searchbbox .index_search span{
+    width:29px;
+    height:29px;
+    display:block;
+    left:27px;
+    top:0;
+}
+.searchbbox .index_search input{
+    height:55px;
+    line-height:55px;
+    padding-left:70px;
+    width:100%
+}
+.searchbbox .index_search span img{
+    max-width: 100%
+}
+/* 分类 */
+.entry-list {
+    margin-top:80px;
+    margin-bottom:30px
+}
+.entry-list ul li{
+    text-align: center;
+    
+}
+.entry-list ul li a{
+    width:20%;
+    float:left;
+    margin-bottom:50px
+}
+.entry-list ul li a img{
+    display: block;
+    width: 92px;
+    height: 91px;
+    margin: auto;
+    margin-bottom:20px
+}
+.entry-list a span {
+    height: 30px;
+    line-height: 30px;
+    color: #616161;
+    font-size: 24px;
+   
+}
+.mainbox{
+	padding:0 25px
+}
+.headlineTitle{
+	color:#fff;
+	background:url("../../images/index/headline.png") no-repeat;
+	margin-left: 10px;
+    margin-right: 16px;
+    background-size: 100% 100%;
+    padding: 6px 14px;
+}
+.headline{
+	color:#686868;
+	font-size:24px;
+	background:#f9f8f8;
+	height:62px;
+	line-height:62px;
+	padding-right:80px;
+}
+.headlinemain{
+    color:#686868;
+}
+.moreimg img{
+	width:16px
+}
+
+/* 优惠 */
+.discounts{
+	margin-top:50px;
+}
+.discoutlist  ul li {
+	width:48%;
+	float:left;
+    margin-bottom:4%;
+    margin-right: 4%
+}
+.discoutlist  ul li img{
+	max-width:100%
+}
+/* 海报 */
+.scrollimg{
+    border-radius: 15px;
+    height: 224px;
+    margin-top:25px;
+    margin-bottom:60px;
+}
+.scrollimg img{
+    border-radius: 15px
+}
+/* 每日必逛 */
+.adverimg>div>a{
+    width: 49%;
+    margin-right: 1%;
+    display: block;
+    float: left;
+    margin-bottom:1%
+}
+.shopAround{
+    margin-bottom:50px
+}
+.indexTitle img{
+    margin-right: 30px;
+    width:29px;
+    height: 29px;
+}
+.indexTitle{
+	border-bottom:1px solid #e1e1e1;
+	margin-top: 30px;
+	padding-bottom: 20px;
+	margin-bottom:30px;
+}
+.indexTitle p{
+    font-size: 34px;
+    
+}
+/* 生活品质 */
+.adverimglist ul li {
+    width: 24%;
+    margin-right:1%;
+    float: left;
+}
+.adverimglist ul li:last-child{
+    margin-right: 0
+}
+/* 产品推荐 */
+.productRec{
+	margin-top:80px;
+}
+.productTitle{
+	line-height:32px;
+	padding-bottom:30px;
+	border-bottom:1px solid #e1e1e1;
+}
+.productTitle p{
+	font-size:34px
+}
+.productTitle p:before{
+	content:"";
+	float:left;
+	background:url("../../images/index/productTitle.png") no-repeat;
+	width: 6px;
+    height: 32px;
+	background-size: contain;
+	margin-right:14px;
+}
+.productTitle p span{
+	color:#7f8699;
+	font-size:24px;
+	margin-left:32px;
+}
+.productlist{
+	margin-top:42px;
+	
+}
+.productlist ul li{
+	float:left;
+	width:49%;
+	margin-bottom:50px;
+}
+.productlist ul li:nth-child(odd){
+	margin-right:10px;
+}
+.productlist ul li .productimg{
+    text-align: center;
+    width: 100%;
+    height: 10.3125rem;
+    overflow: hidden;
+}
+.productlist ul li .productimg img{
+	max-width:100%
+}
+.productlist ul li .productDetail p{
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	font-size:24px;
+	font-weight:bold;
+	line-height:40px;
+    height:76px;
+    color:#000;
+    margin:10px 0
+}
+.productlist ul li .productDetail p span {
+	font-weight:normal;
+	color:#010101
+}
+.productScale p{
+	font-size:24px;
+}
+.productScale p i{
+	font-size:32px;
+}
+.productScale span{
+	font-size:24px;
+	color:#010101;
+	margin-left:20px
+}
