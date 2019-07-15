@@ -61,10 +61,10 @@
     <div class="choosemodels hidden">
         <div class="modelsbox">
             <div class="modelMsg flex jus-start align-c">
-                <img :src="           goods_info.original_img" alt="">
+                <img :src="goods_info.original_img" alt="">
                 <div>
-                    <span class="maincolor font-17" id="attr_price">￥{$goods_attr[0]['attr_price']}</span>
-                    <p class="font-15 " style="line-height:20px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;width: 100%;">{$goods_info['goods_name']}</p>
+                    <span class="maincolor font-17" id="attr_price">￥{{goods_info.attr_price}}</span>
+                    <p class="font-15 " style="line-height:20px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;width: 100%;">{{goods_info.goods_name}}</p>
                 </div>
 
             </div>
@@ -72,7 +72,7 @@
             <div class="goodstype">
                 <p>规格</p>
                 <ul class="clearfix">
-                    <li class="on" data-id="{$vo.goods_attr_id}" data-price="{$vo.attr_price}">{$vo.attr_value}</li>
+                    <li class="on" ></li>
                 </ul>
             </div>
             <div class="buycount flex jus-between align-c">
@@ -134,6 +134,14 @@ export default {
         coupon_price: "100",
         goods_content:
           '<p><img src="http://abc.fyc365.cn/public/upload/goods/2019/05-22/928b88333dab043b0d6c6b8b4ba40442.png" style="float:none;" title="1.png"></p>'
+      },
+      goods_info:{
+        original_img:"https://2019-05-31.oss-cn-shanghai.aliyuncs.com/28705cfdca4e2c7c121d32d344373033.jpg",
+        attr_price:1,
+        goods_name:1,
+
+
+
       }
     };
   },
