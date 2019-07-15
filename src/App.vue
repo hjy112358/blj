@@ -1,34 +1,32 @@
 <template>
   <div id="app">
-    <app-foot v-if="footer_show"></app-foot>
-    <router-view/>
+    <app-footer v-if="footer_show"></app-footer>
+    <router-view v-on:footer="footer"/>
   </div>
 </template>
 
 <script>
-import "../src/assets/css/public/mypublic.css"
-import "../src/assets/js/rem.js"
-import AppFoot  from "./components/foot.vue"
-import $ from 'jquery'
+import "../src/assets/css/public/mypublic.css";
+import "../src/assets/js/rem.js";
+import Footer from "./components/foot.vue";
+import $ from "jquery";
 export default {
-  name: 'App',
-  components:{
-    AppFoot
+  name: "App",
+  data() {
+    return {
+      footer_show: true
+    };
   },
-  data(){
-      return {
-          footer_show:true
-      }
+  components: {
+    "app-footer": Footer
   },
-   methods:{
-      //是否显示底部
-      AppFoot:function (bool) {
-          this.footer_show = bool;
-      }
+  methods: {
+    footer: function(bool) {
+      this.footer_show = bool;
+    }
   }
-}
+};
 </script>
 
 <style>
-
 </style>

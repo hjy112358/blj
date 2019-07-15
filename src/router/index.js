@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/components/index'
 import foot from '@/components/foot'
+import profoot from '@/components/product_foot'
 import Productlist from '@/views/product/productlist'
 import Productdetal from '@/views/product/productDtail'
 import Productdetails from '@/views/product/productdetails'
@@ -24,7 +25,11 @@ export default new Router({
       name: 'foot',
       component: foot
     },
-
+    {
+      path: '/profoot',
+      name: 'profoot',
+      component: profoot
+    },
     {
       path: '/product/productlist',
       name: 'productlist',

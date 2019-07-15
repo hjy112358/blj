@@ -402,6 +402,9 @@ export default {
       {imgurl:require('../assets/images/index/testimg.png'),text1:"",text2:"iPhone XR 全网通4G手机双卡双待 苹果",price:"8699",inventory:"1000"}]
     };
   },
+  created: function() {
+    this.$emit("footer", true);
+  },
   components: {
     swiper,
     swiperSlide

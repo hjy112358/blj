@@ -163,6 +163,7 @@ li, img, label, input {
     top:0;
     left:0;
     width:100%;
+    z-index:99999
 }
 .tophead .backicon{
     display: block;
@@ -206,4 +207,32 @@ li, img, label, input {
 .centerP{
     color:#fff;
     font-size: 36px;
+}
+
+.font-12{
+    font-size: 0.6rem;
+}
+.font-14{
+    font-size: 0.7rem;
+}
+.font-16{
+    font-size: 0.8rem;
+} 
+.font-18{
+    font-size: 0.9rem;
+}  
+.font-20{
+    font-size: 1rem;
+}   
+.font-24{
+    font-size: 1.2rem;
+}
+.font-30{
+    font-size: 1.5rem
+}
+.font-32{
+    font-size: 1.6rem;
+}
+.font-36{
+    font-size: 1.8rem
 }

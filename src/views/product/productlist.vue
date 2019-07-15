@@ -169,6 +169,9 @@ export default {
       current: 0
     };
   },
+  created: function() {
+    this.$emit("footer", true);
+  },
   methods: {
     addClass: function(index) {
       this.current = index;

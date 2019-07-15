@@ -1,5 +1,5 @@
 <template>
-  <div class="foot">
+  <div class="foot" id="app-footer">
     <ul class="clearfix">
       <li @click="indexMain();changeimg($event)" class="on indexli">
         <div class="footimg">
@@ -43,7 +43,7 @@
 <script>
 import "../assets/css/public/foot.css";
 export default {
-  name: "foot",
+  name: "app-footer",
   methods: {
     product() {
       this.$router.push("/product/productlist");

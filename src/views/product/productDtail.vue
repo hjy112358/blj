@@ -73,6 +73,9 @@ export default {
           color:1
     };
   },
+  created: function() {
+    this.$emit("footer", true);
+  },
   methods:{
     change:function(num){
       this.color=num;

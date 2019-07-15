@@ -1,3 +1,4 @@
+/* 首页底部 */
 .foot {
     position: fixed;
     bottom: 0;
@@ -46,3 +47,47 @@
   body{
     padding-bottom:140px
   }
+
+
+  /* 购物车底部 */
+.profoot{
+  width:100%;
+  position: fixed;
+  z-index:99;
+  background:#fff;
+  bottom:0;
+  left:0;
+  height: 4rem;
+  line-height: 4rem;
+  padding:0 0.5rem
+}
+.profootlist ul li{
+  width:33.3%;
+  text-align: center;
+  color:#2c2c2c;
+  font-size:0.75rem;
+}
+.profootlist {
+  width:45%;
+}
+.profootbtn{
+  width:53%;
+}
+.profootlist ul li .footimg {
+  width: 31px;
+  height: 31px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.profootbtn a {
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+  border-radius: 0.7rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8rem
+}
+.profootbtn a.shopcar {
+  background: #fc8383;
+}
