@@ -24,8 +24,8 @@
       </ul>
     </div>
     <div class="profootbtn flex jus-between align-c">
-        <a href="javascript:void(0)" class="shopcar">加入购物车</a>
-        <a href="javascript:void(0)" class="maincolorbg buyNow">立即购买</a>
+        <a href="javascript:void(0)" class="shopcar" @click="showmodelbox()">加入购物车</a>
+        <a href="javascript:void(0)" class="maincolorbg buyNow" @click="showmodelboxbuy()">立即购买</a>
     </div>
   </div>
 </template>
@@ -43,6 +43,13 @@ export default {
   methods:{
       chageco:function(){
           this.iscollect = !this.iscollect
+      },
+      showmodelbox:function(){
+        console.log(1)
+        this.$parent.showmodelbox();
+      },
+       showmodelboxbuy:function(){
+        this.$parent.showmodelboxbuy();
       }
   }
 };

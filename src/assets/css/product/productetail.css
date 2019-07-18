@@ -131,22 +131,23 @@
 
 
 .choosemodels {
-    width: 95%;
+    width: 100%;
     height: 100%;
     background:rgba(0,0,0,.5);
     position: fixed;
-    bottom:2.5rem;
+    bottom:0;
     left:0;
     padding:0 1rem;
-    z-index:3;
+    z-index:999;
 }
 
 .modelsbox{
     position:fixed;
-    bottom:2.5rem;
+    bottom:0;
     left:0;
     width:100%;
-    background:#fff
+    background:#fff;
+    z-index: 999;
 }
 .modelMsg img{
     width:5rem;
@@ -169,24 +170,23 @@
     margin:0.75rem 0;
 }
 .goodstype ul li{
-    float:left;
-    height:1.5rem;
-    line-height: 5rem;
-    text-align:center;
-    width:22%;
-    margin-right:3%;
-    background:#f8f8f8;
+    float: left;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-right: 3%;
+    background: #f8f8f8;
     border-radius: 0.2rem;
-    font-size:0.6rem;
+    font-size: 0.8rem;
+    width:25%;
+    margin-bottom:0.5rem;
 }
 .goodstype ul li.on,
 .goodsColor ul li.on{
     background:#ff4c4c;
     color:#fff
 }
-.goodstype {
-    margin-bottom:1.2rem;
-}
+
 .goodsColor ul li{
     float:left;
     height:1.5rem;
@@ -217,25 +217,73 @@
 }
 .changeCount a,.changeCount input{
     display: inline-block;
-    width:3rem;
-    height:3rem;
+    width:2rem;
+    height:2rem;
     text-align:center;
-    line-height:3rem;
+    line-height:2rem;
     background:#f8f8f8;
     border:none
 }
 .goodsbtn a{
     display: block;
     width:100%;
-    height:5rem;
-    line-height: 5rem;
+    height:3rem;
+    line-height: 3rem;
     text-align: center;
-    color:#fff
+    color:#fff;
+
 }
-.goodsbtn{
+.closechoose{
+    position: absolute;
+    right: 0.5rem;
+    top: -1.5rem;
+}
+.closechoose .closeb{
+    width:1rem;
+    height:1rem;
+}
+
+.agreement{
     position: fixed;
+    top:0;
     left:0;
-    bottom:0;
+    background:rgba(0,0,0,.4);
+    z-index:99999;
     width:100%;
-    z-index:2;
+    height: 100%;
+    overflow: auto;
+    padding:0 0.5rem;
+    padding-top:2.5rem
 }
+.agreement  .agreementmsg{
+    background:#fff;
+    border-radius: 0.5rem;
+    padding:0.5rem 1rem;
+}
+.agreement  .agreementmsg p{
+    font-size: 0.7rem;
+    color:#000;
+    line-height: 1.1rem
+}
+.agreebox input:before{
+    content:'';
+    width:0.8rem;
+    height: 8rem;
+    border:1px solid #ff4c4c;
+    border-radius: 50%
+}
+.agreementbox>img{
+    padding-bottom: 1rem;
+    width: 2rem;
+   
+    padding-top: 1.5rem;
+}
+.agreementbox{
+    text-align: center
+}
+.agreementmsg{
+    text-align: left     
+}
+
+
+

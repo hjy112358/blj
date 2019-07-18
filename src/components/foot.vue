@@ -28,7 +28,7 @@
         </div>
         <p>购物车</p>
       </li>
-      <li @click="changeimg($event)">
+      <li @click="changeimg($event);login()">
         <div class="footimg">
           <img src="../assets/images/public/personal.png" alt class="before">
           <img src="../assets/images/public/personalActive.png" alt class="hidden after">
@@ -47,6 +47,9 @@ export default {
   methods: {
     product() {
       this.$router.push("/product/productlist");
+    },
+    login() {
+      this.$router.push("/index/login");
     },
     indexMain() {
       this.$router.push("/");
