@@ -8,6 +8,8 @@ import Productdetal from '@/views/product/productDtail'
 import Productdetails from '@/views/product/productdetails'
 import login from '@/views/index/login'
 import reg from '@/views/index/reg'
+import forget_pwd from '@/views/index/forget_pwd'
+import userindex from '@/views/user/index'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -64,6 +66,18 @@ export default new Router({
       path: '/index/reg',
       name: 'reg',
       component: reg
+    },
+    // 忘记密码
+    {
+      path: '/index/forget_pwd',
+      name: 'forget_pwd',
+      component: forget_pwd
+    },
+     // 个人中心
+     {
+      path: '/user/index',
+      name: 'userindex',
+      component: userindex
     }
   ]
 })

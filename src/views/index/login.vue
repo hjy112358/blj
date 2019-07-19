@@ -16,11 +16,10 @@
           </div>
           <div class="flex jus-between register">
             <a class="maincolor" href="javascript:void(0)" @click="reg()">注册新账号</a>
-            <a class="forPass" href="javascript:void(0)">忘记密码</a>
+            <a class="forPass" href="javascript:void(0)" @click="forget()">忘记密码</a>
           </div>
           <div class="loginBtn">
-            <a href="javascript:void(0)" onClick="checkSubmit()">登 陆</a>
-            <!-- <input type="hidden" name="referurl" id="referurl" value="{$referurl}" /> -->
+            <a href="javascript:void(0)" @click="goindex()">登 陆</a>
           </div>
           <div class="otherlogin">
             <img src="../../assets/images/public/or.png" alt />
@@ -44,6 +43,12 @@ export default {
   methods:{
     reg:function(){
        this.$router.push("/index/reg");
+    },
+    forget:function(){
+      this.$router.push("/index/forget_pwd");
+    },
+    goindex:function(){
+       this.$router.push("/user/index");
     }
   },
   created: function() {

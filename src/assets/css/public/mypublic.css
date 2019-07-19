@@ -209,17 +209,17 @@ li, img, label, input {
     font-size: 36px;
 }
 
-.font-12{
-    font-size: 0.6rem;
+.font-12{ 
+    font-size:0.6rem
 }
 .font-14{
-    font-size: 0.7rem;
+    font-size: 0.7rem
 }
 .font-16{
-    font-size: 0.8rem;
+    font-size: 0.8rem
 } 
 .font-17{
-    font-size: 0.85rem;
+    font-size:0.85rem;
 }
 .font-18{
     font-size: 0.9rem;
@@ -229,6 +229,9 @@ li, img, label, input {
 }   
 .font-24{
     font-size: 1.2rem;
+}
+.font-26{
+    font-size: 1.3rem;
 }
 .font-30{
     font-size: 1.5rem

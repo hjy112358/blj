@@ -65,7 +65,7 @@
   width:33.3%;
   text-align: center;
   color:#2c2c2c;
-  font-size:0.75rem;
+  font-size:0.7rem;
 }
 .profootlist {
   width:45%;
@@ -74,16 +74,16 @@
   width:53%;
 }
 .profootlist ul li .footimg {
-  width: 31px;
-  height: 31px;
+  width: 1.1rem;
+  height:1.1rem;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem
 }
 .profootbtn a {
   height: 2rem;
   line-height: 2rem;
   padding: 0 1rem;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
   color: #fff;
   display: inline-block;
   font-size: 0.8rem
