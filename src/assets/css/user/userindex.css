@@ -1,0 +1,429 @@
+/* 个人中心 */
+.setting {
+    padding:0 20px;
+    background:url("../../images/user/setbg.png") no-repeat;
+    background-size: 100% 408px;
+    height:408px;
+}
+.backimg{
+    height: 120px;
+    line-height: 120px;
+}
+.setting  .backimg p {
+    color: #fff;
+    font-size: 36px;
+}
+.setting  .backimg span {
+    color: #fff;
+    font-size: 32px;
+}
+.setting .backimg img{
+    width: 22px;
+    height:38px;
+}
+.userimg{
+    width:118px;
+    height: 118px;
+    border-radius: 50%;
+    border:3px solid rgba(255,255,255,.7);
+    overflow: hidden;
+}
+.userimg img{
+    max-width: 100%
+}
+.usermsg {
+    padding:80px 0;
+}
+#signIn  .editbox img{
+    margin-left:30px;
+    width:32px;
+    height:32px;
+}
+#signIn .userimg {
+    border:0;
+    width:120px;
+    height:120px;
+}
+#signIn .signin {
+    height:44px;
+    background:#fff;
+    border-radius: 20px;
+    font-size:24px;
+    padding:0 18px;
+}
+#signIn .signin img{
+    width:26px;
+    height:26px;
+    padding-right:10px;
+}
+.classifylist{
+    padding-bottom:40px;
+}
+.classifylist ul li{
+    width:33.3%;
+    float:left;
+    text-align:center;
+    font-size:28px;
+    color:#fff
+}
+#signIn .usermsg{
+    padding:30px 0
+}
+
+.signinTitle p {
+    color:#fff;
+    text-align: center
+   
+}
+.signinTitle{
+    position: relative;
+    margin-bottom:40px
+}
+.orderStatus{
+    background:url("../../images/user/stautbg.png") no-repeat;
+    background-size:100% 100%;
+    padding: 0 30px;
+    margin-top: -24px;
+    margin-bottom: -30px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.signinTitle .allorder{
+    position: absolute;
+    right: 20px;
+    bottom: -10x;
+    text-decoration: underline;
+}
+.signinTitle .allorder a{
+    color: #fdfecb;
+    font-size: 26px
+}
+.property{
+    right: -22px;
+    top: -100px;
+    width:280px;
+}
+.propertylist{
+    background: #fff;
+    margin: 0 30px;
+    border-radius: 20px;
+    padding-top: 6px;
+    /* padding-left: 10px; */
+    padding-bottom: 6px;
+
+}
+.orderStatus ul{
+    padding:30px 0;
+    background:#fff;
+    border-radius: 60px;
+    padding-bottom:10px;
+}
+.orderStatus ul li{
+    width:20%;
+    text-align: center;
+    float:left
+}
+.orderStatus ul li p{
+    font-size:24px;
+    margin: 15px 0;
+}
+.orderStatus ul li .statimg i{
+    font-size:24px;
+    border-radius: 20px;
+    color:#fff;
+    padding: 16px 10px;
+    height: 24px;
+    line-height: 2px;
+    top:-10px
+}
+.newlogistics {
+    background:#fff;
+    border-radius: 20px;
+    padding:30px;
+    color:#6c6c6c;
+    font-size:24px;
+    margin:0 30px;
+    margin-top:70px;
+}
+
+.newlogistics span{
+    max-width: 730px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.newlogistics .goodsimg{
+    width:80px;
+    height:80px;
+}
+.newlogistics .goodsimg img{
+    max-width: 100%;
+}
+.distribution{
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.distribution span{
+    margin-top: -24px;
+    margin-left: -8px;
+}
+.propertylist ul li{
+    margin:40px 0
+}
+.propertylist ul li div{
+    width:50px;
+    height:50px;
+
+}
+.propertylist ul li div img{
+    max-width: 100%;
+    margin-left:20px
+}
+.propertylist ul li p{
+    color:#564e48;
+    font-size:28px;
+    margin-left:40px
+}
+.propertylist ul li span{
+    color:#a1a1a1;
+    font-size:24px;
+    margin-left:30px
+}
+
+/* #personCenter{
+    background:#f8214a
+} */
+
+#personCenter .setting{
+    background-size:100% 406px;
+    height:406px;
+    position: relative;
+    z-index: 2;
+}
+#personCenter .personClassify{
+    background:#fff;
+    padding: 60px 0;
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+    padding-bottom:30px
+}
+#personCenter .personClassify ul li{
+    float:left;
+    width:33%;
+    text-align: center;
+}
+#personCenter .personClassify ul li a{
+    color:#000;
+    display: block
+}
+#personCenter .personClassify ul li p{
+    line-height: 80px;
+    margin-bottom: -12px;
+    font-size: 24px
+}
+#personCenter .personClassify ul.spantop li span{
+    position: absolute;
+    top:-10px;
+    right: 70px;
+    font-size: 24px;
+    padding: 16px 10px;
+    height: 24px;
+    line-height: 3px;
+    border-radius: 20px;
+    color: #fff;
+    background:#ff4c4c
+}
+.editimg{
+    width:26px;
+    height:28px; 
+    margin-left:46px;
+}
+.editbox span{
+    color:#fff;
+    font-size:40px;
+}
+.editbox p{
+    color:#f8a7a7;
+    font-size:24px;
+}
+.editbox{
+    margin-left:24px;
+    line-height: 50px;
+}
+
+/* 设置 */
+.settinglist{
+    padding:0 20px;
+}
+.settinglist ul li{
+    margin-top:40px;
+}
+.settinglist ul li div img{
+    margin-left:10px;
+}
+.settinglist ul li>img{
+
+    width:10px;
+    height:24px;
+}
+.settinglist ul li p{
+    color:#3a3a3a;
+    font-size:28px
+}
+.settingwrap .nextStep{
+    /* width: 53%; */
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.album{
+    border-bottom:10px solid #7f7f7f
+}
+
+
+/* 绑定手机号 */
+.bindphone{
+    margin:0 70px;
+    text-align: center;
+}
+.bindphone p{
+    font-size:24px;
+    line-height: 48px;
+}
+.bindphone span{
+    font-size:48px;
+}
+.phoneline{
+    border-bottom:1px solid #333635;
+    padding:60px 0
+}
+
+/* 更改手机号 */
+.changephone p{
+    padding:60px 0
+}
+.changephone  .forminput{
+    margin-top:100px
+}
+.datelist .sendCode{
+    font-size:28px;
+}
+
+.datelist .lastinput{
+    border-bottom:1px solid #333635
+}
+
+
+.forminput div {
+    border-top: 1px solid #333635;
+    padding: 8px 0;
+}
+.forminput div input {
+    border: none;
+    line-height:88px;
+    height: 88px;
+}
+/* 昵称 */
+.nickname img{
+    width:36px;
+    height:36px;
+}
+.nickname input{
+    border:none
+}
+
+/* 联系我们 */
+.contact p{
+    font-size: 28px;
+
+}
+/* 修改密码 */
+.editPass{
+    padding:0 70px;
+}
+.editPass input{
+    font-size:26px;
+    line-height: 30px;
+    border-bottom:1px solid #000
+}
+.editPass p{
+    font-size:24px;
+}
+.editPass .dateone{
+    padding:0;
+}
+
+/* 意见反馈 */
+.feedbackbox {
+    padding:30px
+}
+.feedbackbox textarea{
+    border:none;
+    width:100%;
+    min-height:500px;
+    font-size: 28px
+}
+
+.dateone{
+    padding:0 20px;
+    border-bottom:1px solid #333635;
+    font-size:28px;
+    line-height: 90px;
+    height:90px;
+}
+.dateone img{
+    width:12px;
+    height:24px;
+    margin-left:30px;
+}
+
+
+/* 选择上传图片弹窗 */
+.uploadimg{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.5);
+    z-index:99999;
+    color:#fff;
+}
+.uploadimg .checklist{
+    width:100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.uploadimg ul li{
+    border-bottom:1px solid #7f7f7f;
+    background:#333635;
+    font-size:30px;
+    line-height: 100px;
+    height:100px;
+    text-align:center;
+    
+}
+.takePhoto {
+    position: relative;
+    padding: 6px 10px;
+    overflow: hidden;
+    color: #fff;
+    background-color: #ccc;
+}
+
+.takePhoto input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: transparent;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}

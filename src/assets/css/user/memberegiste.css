@@ -1,0 +1,35 @@
+.registerbg{
+    background:url("../../images/user/registarbg.png") no-repeat;
+    background-size:100% 446px;
+    height: 446px;
+    margin-top:-2px
+}
+.registerform{
+    padding:0 126px;
+    margin-top:50px;
+}
+.formbox input{
+    border:0;
+    margin-bottom: -10px;
+}
+.formbox{
+    border-bottom:1px solid #c3c3c3;
+    padding-left:20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+.formbox img{
+    margin-right: 16px;
+}
+
+#registerbtn{
+    width: 100%;
+    display: block;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    border-radius: 40px;
+    background:#ff4c4c;
+    color:#fff;
+    margin-top:70px
+}

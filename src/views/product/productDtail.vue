@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <div class="detailist padding-t136">
+    <div class="detailist ">
       <div class="detailtype">
         <ul class="clearfix">
           <li  @click="change(1)" :class="color=='1'?'on':''">综合</li>

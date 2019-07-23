@@ -7,7 +7,7 @@
       <p class="centerP">商品详情页</p>
       <a href="javascript:void(0)"></a>
     </div>
-    <div class="prodetailsbox padding-t136">
+    <div class="prodetailsbox ">
       <section class="myswiper">
         <swiper :options="swiperOption">
           <swiper-slide class="my-swp-silde" v-for="(slide, key) in swiperList" :key="key">

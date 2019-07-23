@@ -49,7 +49,7 @@ export default {
       this.$router.push("/product/productlist");
     },
     login() {
-      this.$router.push("/index/login");
+      this.$router.push("/user/index");
     },
     indexMain() {
       this.$router.push("/");
