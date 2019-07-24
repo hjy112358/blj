@@ -19,6 +19,12 @@ import feedback from '@/views/user/feedback'
 import memberegistrate from '@/views/user/memberegistrate'
 import shareCode from '@/views/user/shareCode'
 import wallet from '@/views/wallet/wallet'
+import coupon from '@/views/wallet/coupon'
+import accout from '@/views/wallet/accout'
+import changetick from '@/views/wallet/changetick'
+import tradingFloor from '@/views/wallet/tradingFloor'
+import scaleList from '@/views/wallet/scaleList'
+import teamReturn from '@/views/wallet/teamReturn'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import echarts from 'echarts'
@@ -142,7 +148,43 @@ export default new Router({
       path: '/wallet/wallet',
       name: 'wallet',
       component: wallet
-    }
+    },
+    //我的钱包-转化
+    {
+      path: '/wallet/coupon',
+      name: 'coupon',
+      component: coupon
+    },
+    //我的钱包-转化-去转账
+    {
+      path: '/wallet/accout',
+      name: 'accout',
+      component: accout
+    },
+     //我的钱包-转化-去兑换
+     {
+      path: '/wallet/changetick',
+      name: 'changetick',
+      component: changetick
+    },
+     //我的钱包-交易大厅
+     {
+      path: '/wallet/tradingFloor',
+      name: 'tradingFloor',
+      component: tradingFloor
+    },
+    //我的钱包-交易大厅-买入
+    {
+     path: '/wallet/scaleList',
+     name: 'scaleList',
+     component: scaleList
+   },
+   //我的钱包-分享收益
+   {
+    path: '/wallet/teamReturn',
+    name: 'teamReturn',
+    component: teamReturn
+  }
     
   ]
 })

@@ -131,3 +131,322 @@ body{
     margin:0 auto;
     margin-top:-32px
 }
+
+
+
+/* 我的优惠券*/
+.couponwrap {
+    background:#fe4600
+}
+.couponlist{
+    padding:0 20px;
+}
+
+.conponbg{
+    max-width: 100%;
+
+}
+.valid ul li{
+    height:158px;
+    background:url("../../images/wallet/ticketR.png") no-repeat;
+    background-size:100% 158px;
+    margin-top:20px;
+}
+.valid ul li .ticketmsg span{
+    font-size: 28px;
+    color:#989898;
+
+}
+.valid ul li .ticketmsg  p{
+    font-size: 24px;
+    color:#ccc;  
+    padding-top:15px;
+    margin-top:15px;
+}
+.price p{
+    font-size: 24px;
+    color:#fff;
+}
+
+
+.ticketmsg p{
+    border-top:1px dashed #ccc
+}
+.ticketmsg{
+    position: relative;
+    padding-left:20px;
+}
+.ticketmsg:before{
+    content: '';
+    width: 2px;
+    background: #e4e4e4;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    top: -15px;
+}
+.ticketzimg {
+    padding:0 20px
+}
+.price {
+    width:184px;
+    text-align: center;
+}
+.price p{
+    line-height: normal;
+    word-wrap: break-word;
+     word-break: normal;
+}
+.price a{
+    display: block;
+    width: 120px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    color: #e27a01;
+    margin: 0 auto;
+    font-size: 24px;
+}
+.conversion {
+    margin-top:10px !important;
+    margin-bottom:10px !important;
+}
+.efficacy h3{
+    font-size: 28px;
+    color:#000;
+    margin-top:50px;
+    margin-bottom:10px;
+    font-weight: normal;
+}
+.efficacy ul li{
+    height:158px;
+    background:url("../../images/wallet/received.png") no-repeat;
+    background-size:100% 158px;
+    margin-top:10px;
+}
+.efficacy{
+    padding-bottom:40px
+}
+/* 钱包-交易大厅 */
+.tradewrap .setting{
+    background:url("../../images/wallet/walletB.png") no-repeat;
+    background-size:100% 482px;
+    padding:0 30px;
+}
+
+.tradewrap .userimg{
+    border:none
+}
+.transtype{
+    background:#fff;
+    border-radius: 20px;
+    -webkit-box-shadow: rgba(25,26,26,.1) 0px 2px 5px;
+    -moz-box-shadow: rgba(25,26,26,.1) 0px 2px 5px;
+    box-shadow: rgba(25,26,26,.1) 0px 2px 5px;
+}
+.tickets ul li{
+    float:left;
+    width:50%;
+    text-align: center;
+    font-size:24px;
+    margin-bottom:30px;
+}
+.tickets ul li p{
+   margin:30px 0;
+    color:#3a3a3a
+}
+.transbtn{
+    padding-left:40px;
+    margin-bottom:30px;
+}
+.transbtn a{
+    display: inline-block;
+    width: 120px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 2px rgba(25,26,26,.1);
+    color:#000;
+    font-size: 24px
+}
+
+.transbtn .saleout{
+    margin-left:30px;
+}
+.tradewarn {
+    font-size:24px;
+    padding-left:40px;
+    padding-bottom:20px;
+}
+.tradecode>ul>li .tradecodeTitle{
+    color:#6c6c6c;
+    font-size:24px
+}
+.tradecodeTitle{
+    border-bottom:1px solid #9d9d9d;
+    margin-top:30px;
+}
+.tradecodelist{
+    font-size:24px;
+}
+.tradecodelist ul li{
+    line-height: 90px;
+}
+.tradecodelist ul li img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.tradedetail {
+    width:100%;
+    border-bottom:1px solid #e1e0e2
+}
+.saleBg p{
+    background:url("../../images/wallet/buySuccess.png") no-repeat;
+    background-size: 98% 638px;
+    height: 638px;
+    line-height: 638px;
+    font-size: 72px;
+    color: #fff;
+}
+.successBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    height: 100%;
+    z-index:99999;
+    text-align:center;
+}
+.successBg img{
+    max-width:100%;
+}
+.sureBtn img{
+    margin-top:-120px;
+}
+.closeBtn img{
+    width:60px;
+    height: 60px;
+}
+.succpup{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.scaleCon{
+    width:80%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background: #ffffff;
+    border-radius: 40px;
+    padding:20px
+}
+.scaleCon p{
+    font-size:28px;
+    text-align: center;
+}
+.scaleConbox {
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.3);
+    position:fixed;
+    top:0;
+    left:0
+}
+.scaleCon input{
+    height: 70px;
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+    text-indent:20px;
+    border: 1px solid #ccc;
+}
+.scaleCon p{
+    font-size:30px;
+    line-height: 80px;
+    margin-bottom:10px
+}
+.scaleCon a{
+    width:20%;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    display:inline-block;
+}
+.scaleCon a.sure{
+    background:#ff4c4c;
+    color:#fff;
+    border:1px solid #ff4c4c;
+    font-size:28px;
+}
+.scaleBtn{
+    text-align:center;
+    margin-bottom:20px
+}
+.scaleCon a.cancle{
+    border:1px solid #ff4c4c;
+    color:#ff4c4c;
+    font-size:28px;
+}
+.userimg {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    border: 6px solid rgba(255,255,255,.7);
+    overflow: hidden;
+}
+.usermsg {
+    padding:82px 0;
+}
+.editbox span{
+    color:#fff;
+    font-size:40px;
+}
+.editbox p{
+    color:#f8a7a7;
+    font-size:24px;
+}
+.editbox{
+    margin-left:24px;
+    line-height: 50px;
+}
+.tradecodeTitle>p{
+    line-height: 50px
+}
+/* 交易大厅-买入 */
+.tradez .recycle {
+    color: #f8a7a7;
+    font-size: 24px;
+    margin-left: 126px;
+    margin-top: -12px;
+}
+.tradezSetting {
+    padding-top:90px
+}
+.tradez .setting{
+    background-size: 100% 442px;
+}
+.tradez  .transtype{
+    margin-top:10px;
+    padding:20px;
+}
+
+
+.tradezChange .tickets ul li{
+    width:33%;
+}
+.tradezChange .transtype{
+    padding: 20px 0 40px 0;
+}
+.tradezChange .transtype ul {
+    border-bottom: 1px solid #ebebed;
+}
+.tradezChange .transtype ul li.on{
+    border-bottom:1px solid #ff4c4c
+}
