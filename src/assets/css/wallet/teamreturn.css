@@ -7,7 +7,7 @@
     background:url("../../images/wallet/gradebg.png") no-repeat;
     background-size:100%;
     padding-left:34px;
-    height: 380px;
+    height: 400px;
 }
 
 .gradeoneimg {
@@ -73,6 +73,7 @@
 .gradeoneline p{
     color:#7a5b2a;
     font-size:36px;
+    margin-bottom:20px
 }
 .gradeoneline span{
     color:#999999
@@ -130,8 +131,12 @@
 .privilege{
     margin-bottom:60px
 }
+.privilege .prilist p{
+    color:#000;
+    margin-top:10px
+}
 .teamlist{
-    border:1px solid #dbdbdb;
+    border:2px solid #dbdbdb;
     border-radius: 20px;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -158,10 +163,9 @@
     border-radius: 50%;
 } 
 .prilist{
-    border:1px solid #dbdbdb;
+    border:2px solid #dbdbdb;
     border-radius: 20px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding: 30px 0;
 }
 .prilist ul li{
     float:left;

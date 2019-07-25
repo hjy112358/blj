@@ -10,7 +10,7 @@
             <div class="gradeoneline">
               <p>{{date.nickname}}</p>
               <span class="font-10">还有{{date.cha}}点升级</span>
-            
+              <el-progress :percentage="percentage" :format="format" :text-inside="true"></el-progress>
               <div class="gradeclass flex jus-between">
                 <span>v{{star}}</span>
                 <span>v{{end}}</span>
@@ -18,8 +18,8 @@
             </div>
           </div>
           <div class="gradetext">
-            <p class="font-13">{{date.all_money}}</p>
-            <p class="font-10">我的团队收益</p>
+            <p class="font-16">{{date.all_money}}</p>
+            <p class="font-16">我的团队收益</p>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
                 <div>
                   <img src="../../assets/images/public/user.png" alt />
                 </div>
-                <p class="font-14">{{date.nickname}}</p>
+                <p class="font-16">{{date.nickname}}</p>
               </li>
 
               <li>
@@ -81,6 +81,7 @@
         <div class="privilege" id="myteam">
           <p class="maintitle">我的特权</p>
           <div class="prilist">
+            <swiper :options="swiperOption">
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -88,7 +89,7 @@
                     <div>
                       <img src="../../assets/images/wallet/pri02.png" alt />
                     </div>
-                    <p class="font-12">代理收益</p>
+                    <p class="font-16">代理收益</p>
                   </a>
                 </div>
                 <div class="swiper-slide">
@@ -96,7 +97,7 @@
                     <div>
                       <img src="../../assets/images/wallet/pri04.png" alt />
                     </div>
-                    <p class="font-12">合伙人收益</p>
+                    <p class="font-16">合伙人收益</p>
                   </a>
                 </div>
                 <div class="swiper-slide">
@@ -104,7 +105,7 @@
                     <div>
                       <img src="../../assets/images/wallet/pri05.png" alt />
                     </div>
-                    <p class="font-12">商家收益</p>
+                    <p class="font-16">商家收益</p>
                   </a>
                 </div>
                 <div class="swiper-slide">
@@ -112,7 +113,7 @@
                     <div>
                       <img src="../../assets/images/wallet/pri05.png" alt />
                     </div>
-                    <p class="font-12">市代收益</p>
+                    <p class="font-16">市代收益</p>
                   </a>
                 </div>
                 <div class="swiper-slide">
@@ -120,7 +121,7 @@
                     <div>
                       <img src="../../assets/images/wallet/pri05.png" alt />
                     </div>
-                    <p class="font-12">县代收益</p>
+                    <p class="font-16">县代收益</p>
                   </a>
                 </div>
 
@@ -129,7 +130,7 @@
                     <div>
                       <img src="../../assets/images/wallet/pri01.png" alt />
                     </div>
-                    <p class="font-12">加速释放</p>
+                    <p class="font-16">加速释放</p>
                   </a>
                 </div>
 
@@ -138,13 +139,15 @@
                     <div>
                       <img src="../../assets/images/wallet/pri03.png" alt />
                     </div>
-                    <p class="font-12">收益分红</p>
+                    <p class="font-16">收益分红</p>
                   </a>
                 </div>
               </div>
             </div>
+            </swiper>
           </div>
         </div>
+      
       </div>
     </div>
   </div>
@@ -152,8 +155,58 @@
 <style scoped>
 @import "../../assets/css/wallet/teamreturn.css";
 @import "swiper/dist/css/swiper.css";
-
 </style>
+<style>
+.teamReturn .el-progress-bar {
+  width: 420px;
+  height: 4px;
+}
+.teamReturn .el-progress-bar__inner,
+.teamReturn .el-progress-bar__outer {
+  height: 4px !important;
+}
+.el-progress-bar__inner {
+  background: -webkit-linear-gradient(
+    left,
+    #c99758,
+    #f6d7a3
+  ); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(
+    left,
+    #c99758,
+    #f6d7a3
+  ); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(
+    left,
+    #c99758,
+    #f6d7a3
+  ); /* Firefox 3.6 - 15 */
+  background: linear-gradient(
+    to right,
+    #c99758,
+    #f6d7a3
+  ); /* 标准的语法（必须放在最后） */
+}
+.el-progress-bar__outer {
+  overflow: initial;
+}
+.el-progress-bar__innerText {
+  color: #ff4c4c;
+  margin-top: 10px;
+}
+.el-progress-bar__inner:after {
+  content: "";
+  width: 20px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  border: 2px solid #ca9759;
+  border-radius: 10px;
+}
+</style>
+
 <script>
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 import $ from "jquery";
@@ -167,7 +220,17 @@ export default {
         all_money: "48.52",
         all_count: "2"
       },
-      star: 1
+      star: 1,
+      percentage: 20,
+      swiperOption: {
+        slidesPerView: 5,
+        spaceBetween: 7,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      },
     };
   },
   computed: {
@@ -179,19 +242,21 @@ export default {
     swiper,
     swiperSlide
   },
-  methods:{
-     
+  methods: {
+    format(percentage) {
+      return percentage >= 0 ? `${percentage}` : `${percentage}`;
+    }
   },
-  mounted(){
-    //   new Swiper('.swiper-container', {
-    //         slidesPerView: 5,
-    //         spaceBetween: 7,
-    //         freeMode: true,
-    //         pagination: {
-    //             el: '.swiper-pagination',
-    //             clickable: true,
-    //         },
-    //     });
+  mounted() {
+    // new swiper(".swiper-container", {
+    //   slidesPerView: 5,
+    //   spaceBetween: 7,
+    //   freeMode: true,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true
+    //   }
+    // });
   },
   created: function() {
     this.$emit("footer", false);

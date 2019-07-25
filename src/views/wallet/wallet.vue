@@ -19,20 +19,20 @@
     </div>
     <div class="transaction">
       <ul class="clearfix">
-        <li class="bor-l0">
-          <a href="javascript:void(0)" @click="coupon()">
+        <li class="bor-l0" @click="coupon()">
+          <a href="javascript:void(0)" >
             <img src="../../assets/images/wallet/change.png" alt width="29" height="26" />
             <p class="font-16">转化</p>
           </a>
         </li>
-        <li>
-          <a href="javascript:void(0)" @click="tradefloor()">
+        <li @click="tradefloor()">
+          <a href="javascript:void(0)" >
             <img src="../../assets/images/wallet/tradingfloor.png" alt width="27" height="24" />
             <p class="font-16" style="margin-top:12px">交易大厅</p>
           </a>
         </li>
-        <li>
-          <a href="javascript:void(0)" @click="teamReturn()">
+        <li @click="teamReturn()">
+          <a href="javascript:void(0)" >
             <img src="../../assets/images/wallet/teamreturn.png" alt width="28" height="26" />
             <p class="font-16">分享收益</p>
           </a>
