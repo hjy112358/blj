@@ -81,73 +81,42 @@
         <div class="privilege" id="myteam">
           <p class="maintitle">我的特权</p>
           <div class="prilist">
-            <swiper :options="swiperOption">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
+            <!-- <section class="my-swiper">
+              <swiper :swiperOption="swiperOption">
+                <swiper-slide class="my-swp-silde" v-for="(slide, key) in swiperList" :key="key">
                   <a href="javascript:void(0)" @click="teamReturnRebate()">
                     <div>
-                      <img src="../../assets/images/wallet/pri02.png" alt />
+                      <img class="my-swp-img" :src="slide.imgUrl" />
                     </div>
-                    <p class="font-16">代理收益</p>
+                    <p class="font-16">{{slide.text}}</p>
                   </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)" @click="teamReturnOther()">
-                    <div>
-                      <img src="../../assets/images/wallet/pri04.png" alt />
-                    </div>
-                    <p class="font-16">合伙人收益</p>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)" @clicl="teamReturnOther()">
-                    <div>
-                      <img src="../../assets/images/wallet/pri05.png" alt />
-                    </div>
-                    <p class="font-16">商家收益</p>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)" @clicl="teamReturnOther()">
-                    <div>
-                      <img src="../../assets/images/wallet/pri05.png" alt />
-                    </div>
-                    <p class="font-16">市代收益</p>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)" @clicl="teamReturnOther()">
-                    <div>
-                      <img src="../../assets/images/wallet/pri05.png" alt />
-                    </div>
-                    <p class="font-16">县代收益</p>
-                  </a>
-                </div>
-
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)">
-                    <div>
-                      <img src="../../assets/images/wallet/pri01.png" alt />
-                    </div>
-                    <p class="font-16">加速释放</p>
-                  </a>
-                </div>
-
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)">
-                    <div>
-                      <img src="../../assets/images/wallet/pri03.png" alt />
-                    </div>
-                    <p class="font-16">收益分红</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-            </swiper>
+                </swiper-slide>
+              </swiper>
+            </section>-->
+            <section class="my-icons">
+              <swiper :options="iconSwiperOption">
+                <swiper-slide class="my-icons-silde" v-for="(slide, key) in iconsList" :key="key">
+                  <ul class="my-icons-ul">
+                    <li
+                      class="my-icons-li"
+                      v-for="(value, key) in slide.list"
+                      :key="key"
+                      data-id="value.id"
+                    >
+                      <a href="javascript:void(0)">
+                        <div>
+                          <img class="my-swp-img" :src="value.imgSrc" />
+                        </div>
+                        <p class="font-16">{{value.text}}</p>
+                      </a>
+                    </li>
+                  </ul>
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+              </swiper>
+            </section>
           </div>
         </div>
-      
       </div>
     </div>
   </div>
@@ -166,26 +135,10 @@
   height: 4px !important;
 }
 .el-progress-bar__inner {
-  background: -webkit-linear-gradient(
-    left,
-    #c99758,
-    #f6d7a3
-  ); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(
-    left,
-    #c99758,
-    #f6d7a3
-  ); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(
-    left,
-    #c99758,
-    #f6d7a3
-  ); /* Firefox 3.6 - 15 */
-  background: linear-gradient(
-    to right,
-    #c99758,
-    #f6d7a3
-  ); /* 标准的语法（必须放在最后） */
+  background: -webkit-linear-gradient(left, #c99758, #f6d7a3);
+  background: -o-linear-gradient(left, #c99758, #f6d7a3);
+  background: -moz-linear-gradient(left, #c99758, #f6d7a3);
+  background: linear-gradient(to right, #c99758, #f6d7a3);
 }
 .el-progress-bar__outer {
   overflow: initial;
@@ -223,14 +176,95 @@ export default {
       star: 1,
       percentage: 20,
       swiperOption: {
-        slidesPerView: 5,
-        spaceBetween: 7,
-        freeMode: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
+        pagination: { el: ".swiper-pagination" }, // 分页按钮
+        autoplay: {
+          disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
+          delay: 3000 // 自动切换的时间间隔（单位ms）
         }
       },
+      iconSwiperOption: {
+        pagination: { el: ".swiper-pagination" }
+      },
+      iconsList: [
+        {
+          menu: [
+            {
+              list: [
+                {
+                  imgUrl: require("../../assets/images/wallet/pri02.png"),
+                  text: "代理收益"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri04.png"),
+                  text: "合伙人收益"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri05.png"),
+                  text: "商家收益"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri05.png"),
+                  text: "市代收益"
+                }
+              ]
+            },
+            {
+              list: [
+                {
+                  imgUrl: require("../../assets/images/wallet/pri05.png"),
+                  text: "县代收益"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri01.png"),
+                  text: "加速释放"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri03.png"),
+                  text: "收益分红"
+                }
+              ]
+            }
+          ],
+          menu: [
+            {
+              list: [
+                {
+                  imgUrl: require("../../assets/images/wallet/pri02.png"),
+                  text: "代理收益"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri04.png"),
+                  text: "合伙人收益"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri05.png"),
+                  text: "商家收益"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri05.png"),
+                  text: "市代收益"
+                }
+              ]
+            },
+            {
+              list: [
+                {
+                  imgUrl: require("../../assets/images/wallet/pri05.png"),
+                  text: "县代收益"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri01.png"),
+                  text: "加速释放"
+                },
+                {
+                  imgUrl: require("../../assets/images/wallet/pri03.png"),
+                  text: "收益分红"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     };
   },
   computed: {
@@ -247,17 +281,7 @@ export default {
       return percentage >= 0 ? `${percentage}` : `${percentage}`;
     }
   },
-  mounted() {
-    // new swiper(".swiper-container", {
-    //   slidesPerView: 5,
-    //   spaceBetween: 7,
-    //   freeMode: true,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true
-    //   }
-    // });
-  },
+  mounted() {},
   created: function() {
     this.$emit("footer", false);
   }

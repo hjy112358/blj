@@ -328,10 +328,10 @@
 
 <style scope>
 @import "../assets/css/public/index.css";
-@import "swiper/dist/css/swiper.css";
+@import 'swiper/dist/css/swiper.css';
 </style>
 <script>
-import { swiper, swiperSlide } from "vue-awesome-swiper";
+import { swiper, swiperSlide } from 'vue-awesome-swiper';
 import $ from "jquery";
 // import baidumap from "http://api.map.baidu.com/api?v=2.0&ak=ryUeCXuyh8oebZGclHCVYW4ffHHf2n7o"
 export default {
