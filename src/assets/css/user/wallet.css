@@ -242,9 +242,9 @@ body{
 .transtype{
     background:#fff;
     border-radius: 20px;
-    -webkit-box-shadow: rgba(25,26,26,.1) 0px 2px 5px;
-    -moz-box-shadow: rgba(25,26,26,.1) 0px 2px 5px;
-    box-shadow: rgba(25,26,26,.1) 0px 2px 5px;
+    -webkit-box-shadow: rgba(25,26,26,.1) 0px 4px 10px;
+    -moz-box-shadow: rgba(25,26,26,.1) 0px 4px 10px;
+    box-shadow: rgba(25,26,26,.1) 0px 4px 10px;
 }
 .tickets ul li{
     float:left;
@@ -424,7 +424,8 @@ body{
     color: #f8a7a7;
     font-size: 24px;
     margin-left: 126px;
-    margin-top: -12px;
+    margin-top: 12px;
+    margin-bottom:25px
 }
 .tradezSetting {
     padding-top:90px

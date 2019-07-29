@@ -46,14 +46,14 @@
         </div>
         <div style="margin-top:15px;">
           <ul class="clearfix">
-            <li>
+            <li  @click="teamReturn()">
               <a href="javascript:void(0)">
                 <img src="../../assets/images/user/perStar.png" alt width="19" height="19" />
                 <p class="font-12">我的星级</p>
                 <span class="font-18">{{userdata.star}}</span>
               </a>
             </li>
-            <li>
+            <li @click="coupon()">
               <a href="javascript:void(0)">
                 <img
                   src="../../assets/images/user/perZ.png"
@@ -66,7 +66,7 @@
                 <span class="font-18">{{userdata.zquan}}</span>
               </a>
             </li>
-            <li>
+            <li @click="teamReturnRebate()">
               <a href="javascript:void(0)">
                 <img src="../../assets/images/user/perRecommend.png" alt width="20" height="20" />
                 <p class="font-12">推荐人数</p>
@@ -284,6 +284,15 @@ export default {
     },
     gowallet:function(){
       this.$router.push("/wallet/wallet");
+    },
+    teamReturn:function(){
+      this.$router.push("/wallet/teamReturn");
+    },
+     coupon:function(){
+      this.$router.push("/wallet/coupon");
+    },
+     teamReturnRebate:function(){
+      this.$router.push("/wallet/teamReturnRebate");
     }
   },
   created: function() {

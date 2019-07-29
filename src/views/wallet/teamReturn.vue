@@ -38,8 +38,8 @@
                 <p class="font-16">我的特权</p>
               </a>
             </li>
-            <li>
-              <a href="javascript:void()" @click="teamReturnRebate()">
+            <li @click="teamReturnRebate()">
+              <a href="javascript:void()" >
                 <img src="../../assets/images/wallet/rebate.png" alt width="21" height="21" />
                 <p class="font-16">代理收益</p>
               </a>
@@ -81,40 +81,67 @@
         <div class="privilege" id="myteam">
           <p class="maintitle">我的特权</p>
           <div class="prilist">
-            <!-- <section class="my-swiper">
-              <swiper :swiperOption="swiperOption">
-                <swiper-slide class="my-swp-silde" v-for="(slide, key) in swiperList" :key="key">
+            <section class="my-swiper">
+              <swiper :options="swiperOption">
+                <swiper-slide class="my-swp-silde" >
                   <a href="javascript:void(0)" @click="teamReturnRebate()">
                     <div>
-                      <img class="my-swp-img" :src="slide.imgUrl" />
+                      <img class="my-swp-img" src="../../assets/images/wallet/pri02.png" />
                     </div>
-                    <p class="font-16">{{slide.text}}</p>
+                    <p class="font-16">代理收益</p>
+                  </a>
+                </swiper-slide>
+                 <swiper-slide class="my-swp-silde" >
+                  <a href="javascript:void(0)" @click="teamReturnOther()">
+                    <div>
+                      <img class="my-swp-img" src="../../assets/images/wallet/pri04.png" />
+                    </div>
+                    <p class="font-16">合伙人收益</p>
+                  </a>
+                </swiper-slide>
+                 <swiper-slide class="my-swp-silde" >
+                  <a href="javascript:void(0)" @click="teamReturnOther()">
+                    <div>
+                      <img class="my-swp-img" src="../../assets/images/wallet/pri05.png" />
+                    </div>
+                    <p class="font-16">商家收益</p>
+                  </a>
+                </swiper-slide>
+                 <swiper-slide class="my-swp-silde" >
+                  <a href="javascript:void(0)" @click="teamReturnOther()">
+                    <div>
+                      <img class="my-swp-img" src="../../assets/images/wallet/pri05.png" />
+                    </div>
+                    <p class="font-16">市代收益</p>
+                  </a>
+                </swiper-slide>
+                 <swiper-slide class="my-swp-silde" >
+                  <a href="javascript:void(0)" @click="teamReturnOther()">
+                    <div>
+                      <img class="my-swp-img" src="../../assets/images/wallet/pri05.png" />
+                    </div>
+                    <p class="font-16">县代收益</p>
+                  </a>
+                </swiper-slide>
+                 <swiper-slide class="my-swp-silde" >
+                  <a href="javascript:void(0)" >
+                    <div>
+                      <img class="my-swp-img" src="../../assets/images/wallet/pri01.png" />
+                    </div>
+                    <p class="font-16">加速释放</p>
+                  </a>
+                </swiper-slide>
+                 <swiper-slide class="my-swp-silde" >
+                  <a href="javascript:void(0)">
+                    <div>
+                      <img class="my-swp-img" src="../../assets/images/wallet/pri03.png" />
+                    </div>
+                    <p class="font-16">收益分红</p>
                   </a>
                 </swiper-slide>
               </swiper>
-            </section>-->
-            <section class="my-icons">
-              <swiper :options="iconSwiperOption">
-                <swiper-slide class="my-icons-silde" v-for="(slide, key) in iconsList" :key="key">
-                  <ul class="my-icons-ul">
-                    <li
-                      class="my-icons-li"
-                      v-for="(value, key) in slide.list"
-                      :key="key"
-                      data-id="value.id"
-                    >
-                      <a href="javascript:void(0)">
-                        <div>
-                          <img class="my-swp-img" :src="value.imgSrc" />
-                        </div>
-                        <p class="font-16">{{value.text}}</p>
-                      </a>
-                    </li>
-                  </ul>
-                </swiper-slide>
-                <div class="swiper-pagination" slot="pagination"></div>
-              </swiper>
             </section>
+           <div class="swiper-pagination" slot="pagination"></div>
           </div>
         </div>
       </div>
@@ -123,7 +150,7 @@
 </template>
 <style scoped>
 @import "../../assets/css/wallet/teamreturn.css";
-@import "swiper/dist/css/swiper.css";
+@import 'swiper/dist/css/swiper.css';
 </style>
 <style>
 .teamReturn .el-progress-bar {
@@ -158,6 +185,9 @@
   border: 2px solid #ca9759;
   border-radius: 10px;
 }
+.swiper-slide{
+  text-align:center
+}
 </style>
 
 <script>
@@ -175,96 +205,10 @@ export default {
       },
       star: 1,
       percentage: 20,
-      swiperOption: {
-        pagination: { el: ".swiper-pagination" }, // 分页按钮
-        autoplay: {
-          disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
-          delay: 3000 // 自动切换的时间间隔（单位ms）
-        }
-      },
-      iconSwiperOption: {
-        pagination: { el: ".swiper-pagination" }
-      },
-      iconsList: [
-        {
-          menu: [
-            {
-              list: [
-                {
-                  imgUrl: require("../../assets/images/wallet/pri02.png"),
-                  text: "代理收益"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri04.png"),
-                  text: "合伙人收益"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri05.png"),
-                  text: "商家收益"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri05.png"),
-                  text: "市代收益"
-                }
-              ]
-            },
-            {
-              list: [
-                {
-                  imgUrl: require("../../assets/images/wallet/pri05.png"),
-                  text: "县代收益"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri01.png"),
-                  text: "加速释放"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri03.png"),
-                  text: "收益分红"
-                }
-              ]
-            }
-          ],
-          menu: [
-            {
-              list: [
-                {
-                  imgUrl: require("../../assets/images/wallet/pri02.png"),
-                  text: "代理收益"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri04.png"),
-                  text: "合伙人收益"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri05.png"),
-                  text: "商家收益"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri05.png"),
-                  text: "市代收益"
-                }
-              ]
-            },
-            {
-              list: [
-                {
-                  imgUrl: require("../../assets/images/wallet/pri05.png"),
-                  text: "县代收益"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri01.png"),
-                  text: "加速释放"
-                },
-                {
-                  imgUrl: require("../../assets/images/wallet/pri03.png"),
-                  text: "收益分红"
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      swiperOption:{
+          slidesPerView:4,
+          slidesPerGroup:3,
+      }
     };
   },
   computed: {
@@ -279,9 +223,15 @@ export default {
   methods: {
     format(percentage) {
       return percentage >= 0 ? `${percentage}` : `${percentage}`;
+    },
+    teamReturnRebate:function(){
+      this.$router.push("/wallet/teamReturnRebate")
+    },
+    teamReturnOther:function(){
+      this.$router.push("/wallet/teamReturnOther")
     }
   },
-  mounted() {},
+
   created: function() {
     this.$emit("footer", false);
   }

@@ -37,7 +37,7 @@
             <p class="font-16">分享收益</p>
           </a>
         </li>
-        <li>
+        <li @click="tradeFloorZ()">
           <a href="javascript:void(0)">
             <img src="../../assets/images/wallet/record.png" alt width="28" height="26" />
             <p class="font-16">交易记录</p>
@@ -194,6 +194,9 @@ export default {
     },
     teamReturn:function(){
       this.$router.push("/wallet/teamReturn")
+    },
+    tradeFloorZ:function(){
+      this.$router.push("/wallet/tradeFloorZ")
     }
   },
   mounted(){

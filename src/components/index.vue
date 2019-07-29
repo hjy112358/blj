@@ -39,7 +39,7 @@
               <span>全部分类</span>
             </a>
           </li>
-          <li>
+          <li @click="storelist()">
             <a href="javascript:void(0)">
               <img alt="店铺街" src="../assets/images/index/store.png">
               <span>店铺街</span>
@@ -339,35 +339,21 @@ export default {
   data: function() {
     return {
       swiperOption: {
-        pagination: { el: ".swiper-pagination" }, // 分页按钮
-        autoplay: {
-          disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
-          delay: 3000 // 自动切换的时间间隔（单位ms）
-        }
+         pagination: '.swiper-pagination',  
+         autoplay:1000
       },
-      iconSwiperOption: {
-        pagination: { el: ".swiper-pagination" }
-      },
+     
       swiperOption1: {
-        pagination: { el: ".swiper-pagination" }, // 分页按钮
-        autoplay: {
-          disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
-          delay: 3000 // 自动切换的时间间隔（单位ms）
-        }
+         pagination: '.swiper-pagination',  
+        autoplay:1500
       },
       swiperOption2: {
-        pagination: { el: ".swiper-pagination" }, // 分页按钮
-        autoplay: {
-          disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
-          delay: 3000 // 自动切换的时间间隔（单位ms）
-        }
+         pagination: '.swiper-pagination',  // 分页按钮
+       autoplay:2000
       },
       swiperOption3: {
-        pagination: { el: ".swiper-pagination" }, // 分页按钮
-        autoplay: {
-          disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
-          delay: 3000 // 自动切换的时间间隔（单位ms）
-        }
+         pagination: '.swiper-pagination',  // 分页按钮
+       autoplay:200
       },
 
       swiperList: [
@@ -426,12 +412,17 @@ export default {
     },
     gofoot(){
       $(".indexli").click()
+    },
+    storelist:function(){
+      this.$router.push('/store/storelist')
     }
+
   },
   mounted() {
     // this.getlocal();
     this.gofoot();
-  }
+  },
+  
 };
 </script>
 

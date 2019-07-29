@@ -165,7 +165,7 @@
 .prilist{
     border:2px solid #dbdbdb;
     border-radius: 20px;
-    padding: 30px 0;
+    padding: 30px;
 }
 .prilist ul li{
     float:left;
@@ -232,15 +232,15 @@
 }
 .teamreturnmsg p{
     color:#fff;
-    margin-bottom:-40px;
+    margin-top: 10px
 }
 .earnings {
-    padding:36px 40px;
+    padding:45px 40px;
     background:#fff;
     border-radius: 20px;
     box-shadow: 0px 8px 14px 2px rgba(116,116,116,.3);
     margin: 0 30px; 
-    margin-top: -200px;
+    margin-top: -100px;
 }
 .earnings ul li{
     float:left;
@@ -249,7 +249,7 @@
 }
 .earnings ul li p{
     color:#666;
-    margin-bottom: -16px;
+    margin-bottom: 16px;
 }
 .returnNum:after{
     content:"";
@@ -300,13 +300,16 @@
 
 .teamOther .teamreturnmsg{
     background-size: 100% 324px;
-    height: 234px;
+    height: 324px;
     text-align: center;
 }
 .teamOther .returnimg{
     margin: 0 auto;
     margin-top: -50px;
 }
+
+
+
 .wealthbox .hd ul  li{
     float:left;
     width:25%;
@@ -340,3 +343,5 @@
     padding: 0 30px;
     margin-top:40px
 }
+                                       
+

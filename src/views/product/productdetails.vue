@@ -157,10 +157,8 @@ export default {
     return {
       swiperOption: {
         // pagination: { el: ".swiper-pagination" }, // 分页按钮
-        autoplay: {
-          disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
-          delay: 3000 // 自动切换的时间间隔（单位ms）
-        }
+        //  pagination: '.swiper-pagination',  
+        autoplay:1500
       },
       iconSwiperOption: {
         pagination: { el: ".swiper-pagination" }
