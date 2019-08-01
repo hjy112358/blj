@@ -1,16 +1,16 @@
 body{
     background:#f2f2f2;
-    padding-bottom:50px;
+    padding-bottom:100px;
 }
 .storemsg{
     color:#fff;
-    padding:20px 25px;
+    padding:40px 50px;
 }
 .storeimgs {
-    width:44px;
-    height: 44px;
+    width:88px;
+    height: 88px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 30px;
 }
 .storeimgs  .storeimg{
     max-width: 100%;
@@ -19,34 +19,34 @@ body{
 .storelogo{
    bottom:0;
    right:0;
-   width:13px;
-   height:13px;
+   width:26px;
+   height:26px;
 }
 .crownlist {
-    margin-right: 10px
+    margin-right: 20px
 }
 .crownlist ul li{
     float:left;
-    width:17px;
-    height: 13px;
-    line-height: 13px;
+    width:34px;
+    height: 26px;
+    line-height: 26px;
 }
 .crownlist ul li img{
     max-width: 100%
 }
 .attention{
-    width:61px;
-    height:28px;
-    line-height:28px;
+    width:122px;
+    height:56px;
+    line-height:56px;
     text-align:center;
-    border-radius:16px;
-    border:1px solid #fff;
+    border-radius:31px;
+    border:2px solid #fff;
 }
 .storename p{
     line-height: initial
 }
 .storename>p{
-    margin-bottom:8px
+    margin-bottom:16px
 }
 
 .indexlit img{
@@ -54,17 +54,17 @@ body{
 }
 .newgoods{
     background:#fff;
-    border-radius: 10px;
-    height:50px;
-    line-height: 50px;
+    border-radius: 20px;
+    height:100px;
+    line-height: 100px;
 
 }
 .classifybox{
-    padding:0 10px;
+    padding:0 20px;
 }
 .newgoods{
-    padding:0 15px;
-    margin:10px 0
+    padding:0 30px;
+    margin:20px 0
 }
 .goodsimgs img{
     max-width: 100%
@@ -73,13 +73,13 @@ body{
     width:100%
 }
 #leftTabBox1 .hd{
-    height:362px;
+    height:724px;
 }
 #scrollimg{
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
 #nav {
-    padding-bottom:15px;
+    padding-bottom:30px;
 }
 #nav  ul li {
     float:left;
@@ -87,21 +87,24 @@ body{
     color:#fff;
     position: relative;
 }
+#nav  ul li.active p{
+    color:#ff4c4c
+}
 #nav  ul li.active-nav p:after{
     content:'';
-    width:30px;
-    height: 3px;
+    width:60px;
+    height: 6px;
     background:#fff;
-    border-radius: 15px;
+    border-radius: 30px;
     position: absolute;
     bottom:0;
     left:50%;
-    margin-left:-15px
+    margin-left:-30px
 }
 
 .swiper-slide.points{
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border: 50%;
     border-radius: 50%;
     background: #fff;
@@ -113,34 +116,34 @@ body{
 #nav3 ul li.active-nav{
     background:#fff;
   
-    border-radius: 20px;
+    border-radius: 40px;
 }
 #nav3 ul li.active-nav p{
     color:#ff4c4c
 }
 #nav3{
-    padding-left:25px;
-    padding-bottom:15px;
+    padding-left:50px;
+    padding-bottom:30px;
 }
 #nav3 ul li{
-    height:25px;
-    line-height:25px;
+    height:50px;
+    line-height:50px;
 }
 .goodslist ul li{
     width: 49%;
     float: left;
     background: #fff;
     /* max-width: 174px; */
-    border-radius: 10px;
+    border-radius: 30px;
     text-align: center;
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
 .goodslist ul li a>p{
     text-align:left;
-    padding-left:5px;
-    padding-top:5px;
-    height: 40px;
-    line-height:20px;
+    padding-left:10px;
+    padding-top:10px;
+    height: 80px;
+    line-height:40px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -149,7 +152,7 @@ body{
 }
 .goodslist ul li .googsimg{
     width:100%;
-    height:190px
+    height:380px
 }
 
 .goodslist ul li:nth-child(odd){
@@ -157,13 +160,13 @@ body{
 }
 .goodslist ul li .googsimg img{
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .goodslist ,.newgoodlsit{
-    padding:10px
+    padding:20px
 }
 .goodpay{
-    margin-left:10px;
+    margin-left:20px;
     color:#8f8f8f
 }
 
@@ -173,16 +176,16 @@ body{
 
 
 .imgl{
-    width:275px;
-    height: 154px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    width:550px;
+    height: 308px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 .imgr{
-    height:76px;
-    width:76px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    height:152px;
+    width:152px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 .updatelist h3{
     color:#656464;
@@ -191,10 +194,10 @@ body{
 .newlsit ul li {
     width:49%;
     float:left;
-    max-width: 173px;
+    max-width: 346px;
     background:#fff;
-    border-radius: 10px;
-    margin-bottom:5px;
+    border-radius: 20px;
+    margin-bottom:10px;
 }
 .newlsit ul li:nth-child(odd){
     margin-right: 2%
@@ -203,8 +206,8 @@ body{
     max-width: 100%
 }
 .newlsit ul li p{
-    height:40px;
-    line-height: 20px;
+    height:80px;
+    line-height: 40px;
     text-overflow: -o-ellipsis-lastline;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -212,17 +215,17 @@ body{
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
-    padding-top:10px;
+    padding-top:20px;
 }
 .storefooter{
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 100px;
     z-index: 9;
     background: #fff;
-    box-shadow: 0 1px 3px 0px rgba(0,0,0,.6);
+    box-shadow: 0 2px 6px 0px rgba(0,0,0,.6);
 }
 .storefooter ul li{
     float:left;
@@ -233,30 +236,30 @@ body{
     line-height:0px;
 }
 .storefooter ul li img{
-    margin-top:-11px
+    margin-top:-22px
 }
 .searchbox input{
-    height: 27px;
-    line-height: 27px;
+    height: 54px;
+    line-height: 54px;
     border:1px solid #fff;
-    border-radius: 20px;
-    padding-left: 38px;
+    border-radius: 40px;
+    padding-left: 76px;
     position: relative;
     background: #ff4c4c;
     color: #fff;
-    margin-top: -10px;
-    margin-bottom: 10px;
+    margin-top: -20px;
+    margin-bottom: 20px;
     width:88%;
 }
 .inputbox:before{
     content:"";
-    background:url("../images/newimg/store/searchW.png") no-repeat;
+    background:url("../../images/good/searchW.png") no-repeat;
     background-size:100%;
     position: absolute;
-    top: 3px;
-    left: 12px;
-    width: 16px;
-    height: 16px;
+    top: 6px;
+    left: 24px;
+    width: 32px;
+    height: 32px;
     z-index: 2;
 }
 .searchbox {
@@ -272,36 +275,36 @@ body{
 }
 .classifylist>ul>li{
     background:#fff;
-    border-radius: 10px;
-    padding:14px 15px 5px 15px;
-    margin-top:10px
+    border-radius: 20px;
+    padding:28px 30px 10px 30px;
+    margin-top:20px
 }
 .classifylist>ul>li ul li{
     float:left;
     width:49%;
     text-align: center;
     color:#656464;
-    height:38px;
-    line-height: 38px;
+    height:76px;
+    line-height: 76px;
     background:#efefef;
-    border-radius: 10px;
-    margin-bottom:5px
+    border-radius: 20px;
+    margin-bottom:10px
     
 }
 .classifylist>ul>li ul li:nth-child(odd){
     margin-right: 2%
 }
 .classifyTitle{
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
 .classifylist {
-    padding:0 10px
+    padding:0 20px
 }
 .classifydetails{
-    padding-bottom:15px;
+    padding-bottom:30px;
 }
 #nav4{
-    padding-top:10px
+    padding-top:20px
 }
 #nav4 ul li{
     text-align: center;
@@ -316,24 +319,24 @@ body{
 .inputboxhead input{
     width:100%;
     border: 0;
-    border-radius: 20px;
-    height: 28px;
-    line-height: 28px;
-    text-indent: 45px;
-    margin-top: -3px;
+    border-radius: 40px;
+    height: 56px;
+    line-height: 56px;
+    text-indent: 90px;
+    margin-top: -6px;
 }
 .inputboxhead  input::-webkit-input-placeholder {
     color: #f2f2f2;
 }
 .inputboxhead:before{
     content:"";
-    background:url("../images/newimg/store/searchR.png") no-repeat;
+    background:url("../../images/good/searchR.png") no-repeat;
     background-size:100%;
     position: absolute;
-    top: 23px;
-    left: 12px;
-    width: 16px;
-    height: 16px;
+    top: 46px;
+    left: 24px;
+    width: 32px;
+    height: 32px;
     z-index: 2;
 
 }
@@ -342,8 +345,8 @@ body{
     color:#000
 }
 .storelist #nav{
-    margin-top:10px;
-    padding-bottom:10px;
+    margin-top:30px;
+    padding-bottom:30px;
 }
 .storelist #nav li.active-nav p{
     color:#ff4c4c
@@ -352,80 +355,77 @@ body{
     width:0
 }
 .storelist .storeimg{
-    width:39px;
-    height: 39px;
+    width:78px;
+    height: 78px;
     border-radius: 50%;
-    margin-right:15px
+    margin-right:30px
 }
 .storelist .storeimg img{
    max-width: 100%;
    border-radius: 50%;
 }
 .storesbox{
-    padding:0 10px;
+    padding:0 20px;
 }
 .storesbox ul li{
     background:#fff;
-    border-radius: 10px;
-    padding:15px;
-    margin-bottom: 10px;
+    border-radius: 20px;
+    padding:30px;
+    margin-bottom: 20px;
 
 }
 .storesbox ul li p{
-    line-height: 20px;
+    line-height: 40px;
 }
 .col8f{
     color:#8f8f8f
 }
 .storesbox ul li .goIn{
-    width:45px;
-    height:20px;
-    line-height: 20px;
+    width:90px;
+    padding: 4px 0px;
     border:1px solid #ff4c4c;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     color:#ff4c4c;
     display: block;
 }
 .storegoodsimg{
-    margin-top:15px;
+    margin-top:30px;
 }
 .storegoodsimg div{
     width: 31%;
-    height: 105px;
-    border-radius: 20px;
+    height: 210px;
+    border-radius: 40px;
     margin-right: 2%;
 }
 .storegoodsimg div img{
     max-width: 100%;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 .storelist .inputbox input{
     width: 100%;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 20px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 40px;
     border: 0;
-    margin-top: -4px;
-    text-indent: 45px;
+    margin-top: -8px;
 }
 .storelist .inputbox input::-webkit-input-placeholder {
     color: #f2f2f2;
 }
 .storelist  .inputbox:before{
-    background: url(../images/newimg/store/searchR.png) no-repeat;
-    top:24px;
+    background: url(../../images/good/searchR.png) no-repeat;
     background-size: 100%
 }
 .storefocus{
     position: relative;
 }
 .storefocus .hd ul li{
-    width: 10px;
-    height:10px;
+    width: 20px;
+    height:20px;
     border-radius: 50%;
     background:#fff;
-    margin-right: 9px;
+    margin-right: 18px;
     float:left;
 }
 .storefocus .hd ul li.on{
@@ -433,8 +433,12 @@ body{
 }
 .storefocus .hd{
     position:absolute;
-    bottom:15px;
+    bottom:30px;
     left:50%;
     transform:translateX(-50%);
     z-index: 2;
+}
+
+.storeindex ul li p{
+    padding-bottom:10px
 }

@@ -37,6 +37,7 @@ import teamReturnOther from '@/views/wallet/teamReturnOther'
 import tradeFloorZ from '@/views/wallet/tradeFloorZ'
 // 店铺
 import storelist from '@/views/store/storelist'
+import storeindex from '@/views/store/storeindex'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -223,6 +224,11 @@ export default new Router({
    path: '/store/storelist',
    name: 'storelist',
    component: storelist
+ }, //店铺首页
+ {
+   path: '/store/storeindex',
+   name: 'storeindex',
+   component: storeindex
  }
  
     
