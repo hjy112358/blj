@@ -28,7 +28,7 @@
                 <p class="font-12">我的钱包</p>
               </a>
             </li>
-            <li class="pos-r">
+            <li class="pos-r" @click="mycollet()">
               <a href="javascript:void(0)">
                 <img src="../../assets/images/user/perCollect.png" alt width="20" height="17" />
                 <p class="font-12">我的收藏</p>
@@ -293,6 +293,9 @@ export default {
     },
      teamReturnRebate:function(){
       this.$router.push("/wallet/teamReturnRebate");
+    },
+    mycollet:function(){
+      this.$router.push("/store/mycollect");
     }
   },
   created: function() {

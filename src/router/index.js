@@ -5,6 +5,8 @@ import index from '@/components/index'
 import foot from '@/components/foot'
 // 产品底部
 import profoot from '@/components/product_foot'
+// 店铺底部
+import storefoot from '@/components/storefoot'
 // 产品
 import Productlist from '@/views/product/productlist'
 import Productdetal from '@/views/product/productDtail'
@@ -38,6 +40,9 @@ import tradeFloorZ from '@/views/wallet/tradeFloorZ'
 // 店铺
 import storelist from '@/views/store/storelist'
 import storeindex from '@/views/store/storeindex'
+import storeall from '@/views/store/storeall'
+import mycollect from '@/views/store/mycollect'
+import intereststore from '@/views/store/intereststore'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -70,6 +75,12 @@ export default new Router({
       path: '/profoot',
       name: 'profoot',
       component: profoot
+    },
+     // 店铺底部
+     {
+      path: '/storefoot',
+      name: 'storefoot',
+      component: storefoot
     },
     // 商品列表
     {
@@ -229,8 +240,22 @@ export default new Router({
    path: '/store/storeindex',
    name: 'storeindex',
    component: storeindex
+ }, //店铺宝贝
+ {
+   path: '/store/storeall',
+   name: 'storeall',
+   component: storeall
+ }, //收藏店铺
+ {
+   path: '/store/mycollect',
+   name: 'mycollect',
+   component: mycollect
  }
- 
-    
+ , //关注店铺
+ {
+   path: '/store/intereststore',
+   name: 'intereststore',
+   component: intereststore
+ }
   ]
 })

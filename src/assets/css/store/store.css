@@ -13,7 +13,6 @@ body{
     margin-right: 30px;
 }
 .storeimgs  .storeimg{
-    max-width: 100%;
     border-radius: 50%
 }
 .storelogo{
@@ -31,9 +30,7 @@ body{
     height: 26px;
     line-height: 26px;
 }
-.crownlist ul li img{
-    max-width: 100%
-}
+
 .attention{
     width:122px;
     height:56px;
@@ -49,9 +46,7 @@ body{
     margin-bottom:16px
 }
 
-.indexlit img{
-    max-width: 100%
-}
+
 .newgoods{
     background:#fff;
     border-radius: 20px;
@@ -66,9 +61,7 @@ body{
     padding:0 30px;
     margin:20px 0
 }
-.goodsimgs img{
-    max-width: 100%
-}
+
 .scrollimg li img{
     width:100%
 }
@@ -128,22 +121,23 @@ body{
 #nav3 ul li{
     height:50px;
     line-height:50px;
+    width: 20%;
+    margin-right: 5%;
 }
 .goodslist ul li{
     width: 49%;
     float: left;
     background: #fff;
-    /* max-width: 174px; */
     border-radius: 30px;
     text-align: center;
     margin-bottom:10px;
 }
-.goodslist ul li a>p{
+.goodslist ul li p{
     text-align:left;
     padding-left:10px;
     padding-top:10px;
-    height: 80px;
-    line-height:40px;
+    height: 92px;
+    line-height:46px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -159,10 +153,9 @@ body{
     margin-right: 2%
 }
 .goodslist ul li .googsimg img{
-    max-width: 100%;
     border-radius: 20px;
 }
-.goodslist ,.newgoodlsit{
+ .newgoodlsit{
     padding:20px
 }
 .goodpay{
@@ -170,11 +163,14 @@ body{
     color:#8f8f8f
 }
 
-.imgl img ,.imgr img{
-    max-width: 100%
+
+
+#page3{
+    margin-top:20px
 }
-
-
+.goodslist{
+    padding:0 20px
+}
 .imgl{
     width:550px;
     height: 308px;
@@ -202,9 +198,7 @@ body{
 .newlsit ul li:nth-child(odd){
     margin-right: 2%
 }
-.newlsit ul li img{
-    max-width: 100%
-}
+
 .newlsit ul li p{
     height:80px;
     line-height: 40px;
@@ -361,7 +355,6 @@ body{
     margin-right:30px
 }
 .storelist .storeimg img{
-   max-width: 100%;
    border-radius: 50%;
 }
 .storesbox{
@@ -383,7 +376,7 @@ body{
 .storesbox ul li .goIn{
     width:90px;
     padding: 4px 0px;
-    border:1px solid #ff4c4c;
+    border:2px solid #ff4c4c;
     border-radius: 20px;
     text-align: center;
     color:#ff4c4c;
@@ -399,7 +392,6 @@ body{
     margin-right: 2%;
 }
 .storegoodsimg div img{
-    max-width: 100%;
     border-radius: 40px;
 }
 .storelist .inputbox input{
