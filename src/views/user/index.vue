@@ -35,7 +35,7 @@
                 <span>10</span>
               </a>
             </li>
-            <li class="pos-r">
+            <li class="pos-r" @click="intereststore()">
               <a href="javascript:void(0)">
                 <img src="../../assets/images/user/perStore.png" alt width="23" height="19" />
                 <p class="font-12">关注店铺</p>
@@ -82,14 +82,14 @@
           <div class="signinTitle" style="margin-top:20px">
             <p class="font-24">我的<span style="color:#fdfecb">订单</span>
             </p>
-            <span class="allorder">
+            <span class="allorder" @click="allorder()">
               <a href="javascript:void(0)">查看全部订单</a>
             </span>
           </div>
           <div class="orderStatus clearfix">
             <div class="orderstatusbox">
               <ul class="clearfix">
-                <li>
+                <li @click="order_daifu()">
                   <a href="javascript:void(0)">
                     <div>
                       <div class="statimg pos-r">
@@ -105,7 +105,7 @@
                     </div>
                   </a>
                 </li>
-                <li>
+                <li @click="order_daifa()">
                   <a href="javascript:void(0)">
                     <div>
                       <div class="statimg pos-r">
@@ -121,7 +121,7 @@
                     </div>
                   </a>
                 </li>
-                <li>
+                <li @click="order_daishou()">
                   <a href="javascript:void(0)">
                     <div>
                       <div class="statimg pos-r">
@@ -137,7 +137,7 @@
                     </div>
                   </a>
                 </li>
-                <li>
+                <li @click="order_ping()">
                   <a href="javascript:void(0)">
                     <div>
                       <div class="statimg pos-r">
@@ -153,7 +153,7 @@
                     </div>
                   </a>
                 </li>
-                <li>
+                <li @click="afterScale()">
                   <a href="javascript:void(0)" id="contact">
                     <div>
                       <div class="statimg pos-r">
@@ -296,6 +296,24 @@ export default {
     },
     mycollet:function(){
       this.$router.push("/store/mycollect");
+    },
+    intereststore:function(){
+       this.$router.push("/store/intereststore")
+    },
+    allorder:function(){
+      this.$router.push("/order/allorder")
+    },
+    order_daifa:function(){
+      this.$router.push("/order/order_daifa")
+    },
+    order_daifu:function(){
+      this.$router.push("/order/order_daifu")
+    },
+    order_daishou:function(){
+      this.$router.push("/order/order_daishou")
+    },
+    order_ping:function(){
+      this.$router.push("/order/order_ping")
     }
   },
   created: function() {

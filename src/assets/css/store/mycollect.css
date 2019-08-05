@@ -33,8 +33,46 @@ body{
     width: 26px;
     height: 26px;
 }
-.productmsglist ul li{
+
+
+.productmsglist ul li {
+    line-height: 40px;
+    position: relative;
+    transform: translateX(0);
+    transition: all 0.3s; /*滑动效果更生动*/
+    padding-left: 10px;
     padding:0 50px;
+    margin-bottom:40px
+  }
+  .productmsglist ul {
+    overflow-x: hidden; /*隐藏ul x轴的滚动条*/
+  }
+  .productmsglist li.move {
+    transform: translateX(-60px); /*滑动后x轴位移-60px,使其可见*/
+  }
+  .productmsglist li.movec{
+    transform: translateX(-100px);
+  }
+  .productmsglist .del {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    z-index: 3;
+    width: 60px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    transform: translateX(60px); /*默认x轴位移60px，使其隐藏*/
+    font-size: 22px;
+    background:#ff4c4c;
+    color:#fff
+}
+.productmsglist .delcollect{
+    height:200px;
+    line-height: 200px;
+    width:100px;
+    transform: translateX(100px); 
+    font-size: 24px
 }
 .storemsg{
     margin-left:26px;
@@ -50,6 +88,7 @@ body{
 .goodproceAnum  span{
     line-height: initial;
     text-align: center;
+    display: block
 }
 .goodproceAnum{
     text-align: center;

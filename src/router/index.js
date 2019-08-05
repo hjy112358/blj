@@ -43,6 +43,13 @@ import storeindex from '@/views/store/storeindex'
 import storeall from '@/views/store/storeall'
 import mycollect from '@/views/store/mycollect'
 import intereststore from '@/views/store/intereststore'
+// 订单
+import allorder from '@/views/order/allorder'
+import order_daifa from '@/views/order/order_daifa'
+import order_daifu from '@/views/order/order_daifu'
+import order_daishou from '@/views/order/order_daishou'
+import order_ping from '@/views/order/order_ping'
+import evaluate from '@/views/order/evaluate'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -256,6 +263,41 @@ export default new Router({
    path: '/store/intereststore',
    name: 'intereststore',
    component: intereststore
- }
+ }, //全部订单
+ {
+  path: '/order/allorder',
+  name: 'allorder',
+  component: allorder
+},
+// 订单-待发货
+{
+  path: '/order/order_daifa',
+  name: 'order_daifa',
+  component: order_daifa
+},
+// 订单-待付款
+{
+  path: '/order/order_daifu',
+  name: 'order_daifu',
+  component: order_daifu
+},
+// 订单-待收货
+{
+  path: '/order/order_daishou',
+  name: 'order_daishou',
+  component: order_daishou
+},
+// 订单-待评价
+{
+  path: '/order/order_ping',
+  name: 'order_ping',
+  component: order_ping
+},
+// 订单-评价
+{
+  path: '/order/evaluate',
+  name: 'evaluate',
+  component: evaluate
+}
   ]
 })
