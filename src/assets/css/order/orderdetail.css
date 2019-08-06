@@ -1,0 +1,437 @@
+.orderpaid{
+    padding:0 20px;
+}
+.orderhead,.nonPay{
+    height:88px;
+    line-height:88px;
+}
+.nonPay{
+    padding:0 20px
+}
+
+.orderhead p,.nonPay p{
+    color:#fff;
+    font-size:36px;
+    text-align:center;
+}
+.nonPay img{
+    width:22px;
+    height:38px;
+}
+
+.nonPay .cancleOrder{
+    font-size:32px;
+}
+.adressLocation img{
+    width:26px;
+    height:32px;
+}
+.adressLocation p{
+    font-size:26px;
+    margin-left:14px;
+}
+.adressDetail img{
+    width:12px;
+    height:22px;
+}
+.orderAdress{
+    height:80px;
+    line-height: 80px;
+    margin-bottom:14px;
+}
+.orderTitle{
+    border-bottom:2px solid #c6c6c6
+}
+.orderTitle .titleText img{
+    width:26px;
+    height:26px;
+    margin-right:10px;
+}
+.orderTitle p{
+    font-size:30px;
+    line-height: 60px;
+}
+.productmsg{
+    margin-left: 14px;
+    margin-top: 4px;
+    max-width:420px;
+}
+.productmsg .price{
+    margin-top:-12px;
+}
+.productmsg p{
+    font-size:26px;
+    color:#2c2c2c;
+    height:60px;
+    line-height: 30px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.productmsg span{
+    font-size:26px;
+    color:#838383;
+    margin-top: 8px;
+    display: inherit;
+    margin-bottom:20px
+}
+.productImg{
+    width: 150px;
+    height: 150px;
+    border:2px solid #eee;
+    padding:10px;
+}
+.productImg img{
+    max-width:100%;
+}
+.productDetail{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.orderTitle .paid{
+    background:url("../../images/good/pay.png") no-repeat;
+    background-size:100%;
+    font-size:23px;
+    width: 90px;
+    height: 40px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    top: 16px;
+} 
+.inforTitle{
+    color:#666;
+}
+.inforDetail{
+    color:#333;
+}
+.proInfor{
+    font-size:26px;
+}
+.inforDetail img{
+    width:40px;
+    height:40px;
+    margin-right:20px
+}
+.rule{
+    border-bottom:none
+}
+.ruleBtn a{
+    height:60px;
+    line-height: 60px;
+    font-size:28px;
+    color:#fff;
+    display: block;
+    text-align:center;
+    border-radius:20px;
+    width:80%;
+    margin:50px auto
+}
+
+/* 未支付 */
+.payStatus p{
+    font-size:36px;
+    line-height: 64px;
+}
+.payStatus span{
+    font-size:24px;
+}
+.payStatus{
+    background: url(../../images/good/detail.png) no-repeat;
+    padding: 60px 0;
+    color: #fff;
+    padding-left: 20px;
+    height: 778px;
+    background-position: 0 0;
+}
+.paydetail{
+    top: 220px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+   
+}
+.paydetail .paydetailbox{
+    background: url(../../images/good/nonepaybg.png) no-repeat top center;
+    background-size: 100% 890px;
+    background-position: 0px -46px;
+    position: relative;
+    height:840px;
+    margin-bottom:40px;
+}
+.diviLine{
+    width:100%;
+    height:2px;
+    border-bottom:2px solid #ddd;
+    margin:40px 0
+}
+.paydetail  .proInfor>div{
+    line-height: 58px;
+}
+.nopaybg {
+    background:#f2f2f2
+}
+.non-payment .proInfor{
+    padding: 20px 60px;
+}
+.paybtn {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+}
+.paybtn a{
+    height: 60px;
+    line-height: 60px;
+    border-radius: 20px;
+    width: 90%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size:24px;
+}
+
+
+/* 产品详情 */
+
+.focus {
+    width: 100%;
+    height: 620px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.focus .hd {
+    width: 100%;
+    height: 22px;
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    text-align: center;
+    margin-left:20px
+}
+
+.focus .hd ul {
+    display: inline-block;
+    height: 10px;
+    padding: 6px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.focus .hd ul li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border:2px solid #fff;
+    margin: 0 10px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.focus .hd ul .on {
+    background: #fff;
+}
+
+.focus .bd {
+    position: relative;
+    z-index: 0;
+}
+
+.focus .bd li img {
+    width: 100%;
+    height: 620px;
+    background: url(../../images/public/loading.gif) center center no-repeat;
+}
+
+.focus .bd li a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* 取消链接高亮 */
+}
+.goodshead {
+    width:95%;
+    position:fixed;
+    left:0;
+    top:0;
+    height: 88px;
+    line-height: 88px;
+    padding:0 20px
+}
+.countDown{
+    position: absolute;
+    bottom: 4px;
+    left: 20px;
+}
+.countDown p span {
+    width:40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    background:#000;
+    
+}
+.goodsPride{
+    background:#262928;
+    color:#fff;
+    text-align: center;
+    padding:10px 0;
+}
+.goodsPride p{
+    line-height: 50px   
+}
+.goodsInfo{
+    background:#191a1a;
+    color:#fff;
+    text-align:center;
+    padding-bottom:20px;
+}
+.goodsInfo h3{
+    font-weight: normal;
+    text-align:center;
+    padding:10px 0;
+    display: inline;
+    position: relative;
+}
+.goodsInfo h3:before{
+    content: '';
+    background: url(../../images/good/titlel.png) no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 20px;
+    position: absolute;
+    left: -52px; 
+   top: 20px;
+}
+.goodsInfo h3:after{
+    content: '';
+    background: url(../../images/good/titler.png) no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: -52px;
+    top: 20px;
+}
+.goodsInfo p{
+    text-align:left;
+    padding:0 20px;
+    line-height: 50px;
+}
+.goodsbtn a{
+    display: block;
+    width:100%;
+    height:100px;
+    line-height: 100px;
+    text-align: center;
+    color:#fff
+}
+.goodsbtn{
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:100%
+}
+.goodsDetail {
+    padding-bottom:100px
+}
+.choosemodels {
+    width: 95%;
+    height: 100%;
+    background:rgba(0,0,0,.5);
+    position: fixed;
+    bottom:100px;
+    left:0;
+    padding:0 20px;
+
+}
+
+.modelsbox{
+    position:fixed;
+    bottom:100px;
+    left:0;
+    width:100%;
+    background:#fff
+}
+.modelMsg img{
+    width:200px;
+    height: 200px;
+    margin-top:-70px;
+    margin-right: 30px;
+}
+.modelMsg{
+    margin:0 20px;
+    border-bottom:2px solid #000;
+    padding-bottom:20px
+}
+.goodstype ,.goodsColor{
+    padding:0 20px;
+}
+.goodstype p,.goodsColor p{
+    font-size:26px;
+    margin-top:52px;
+    margin:30px 0;
+}
+.goodstype ul li{
+    float:left;
+    height:60px;
+    line-height: 60px;
+    text-align:center;
+    width:22%;
+    margin-right:3%;
+    background:#f8f8f8;
+    border-radius: 10px;
+    font-size:24px;
+}
+.goodstype ul li.on,
+.goodsColor ul li.on{
+    background:#ff4c4c;
+    color:#fff
+}
+.goodstype {
+    margin-bottom:50px;
+}
+.goodsColor ul li{
+    float:left;
+    height:60px;
+    line-height: 60px;
+    text-align:center;
+    width:17%;
+    margin-right:3%;
+    background:#f8f8f8;
+    border-radius: 10px;
+    font-size:24px;
+}
+.goodsColor {
+    margin:0 20px;
+    padding-bottom:50px;
+    border-bottom:2px solid #000
+}
+.buycount{
+    margin:20px 20px;
+}
+
+.changeCount a,.changeCount input{
+    display: inline-block;
+    width:60px;
+    height:60px;
+    text-align:center;
+    line-height:60px;
+    background:#f8f8f8;
+    border:none
+}

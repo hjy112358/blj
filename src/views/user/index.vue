@@ -137,7 +137,7 @@
                     </div>
                   </a>
                 </li>
-                <li @click="order_ping()">
+                <li @click="alleva()">
                   <a href="javascript:void(0)">
                     <div>
                       <div class="statimg pos-r">
@@ -153,7 +153,7 @@
                     </div>
                   </a>
                 </li>
-                <li @click="afterScale()">
+                <li @click="contrat()">
                   <a href="javascript:void(0)" id="contact">
                     <div>
                       <div class="statimg pos-r">
@@ -235,6 +235,14 @@
           </ul>
         </div>
       </div>
+
+      <div class="contact" v-show='contract==1'>
+        <div class="contactimg">
+            <p class="font-14">拨打电话<span>(0513) 5588 5526</span></p>
+            <a href="tel:0513-5588-5526" class="contactus"></a>
+            <img src="../../assets/images/good/close.png" alt="" class="closeimg" @click='closecontract()'>
+        </div>
+    </div>
     </div>
   </div>
 </template>
@@ -255,7 +263,8 @@ export default {
         weifa: "3",
         daishou: "1"
       },
-      showupimg: 0
+      showupimg: 0,
+      contract:0
     };
   },
   beforeRouteEnter(to, from, next) {
@@ -312,8 +321,17 @@ export default {
     order_daishou:function(){
       this.$router.push("/order/order_daishou")
     },
-    order_ping:function(){
-      this.$router.push("/order/order_ping")
+    alleva:function(){
+      this.$router.push("/order/allevaluate")
+    },
+    afterScale:function(){
+      this.$router.push("/order/afterScale")
+    },
+    contrat:function(){
+      this.contract=1
+    },
+    closecontract:function(){
+       this.contract=0
     }
   },
   created: function() {

@@ -22,45 +22,40 @@
           </ul>
         </div>
         <div class="bd">
-          <!-- 全部 -->
-          <ul>
-            <li>
-              <div class="productmsglist">
-                <ul>
-                  <li v-for="(good,index) in goodlist" :key="index">
-                    <a href="javascript:void(0)">
-                      <div class="productmsg">
-                        <div class="flex jus-between align-c">
-                          <div class="flex jus-start align-c">
-                            <img src="../../assets/images/good/store.png" alt class="store" />
-                            <p class="storename">
-                              {{good.store_name}}
-                              <i>></i>
-                            </p>
-                          </div>
-                          <span class="maincolor">待付款</span>
+            <div class="productmsglist">
+              <ul>
+                <li v-for="(good,index) in goodlist" :key="index">
+                  <a href="javascript:void(0)">
+                    <div class="productmsg">
+                      <div class="flex jus-between align-c">
+                        <div class="flex jus-start align-c">
+                          <img src="../../assets/images/good/store.png" alt class="store" />
+                          <p class="storename">
+                            {{good.store_name}}
+                            <i>></i>
+                          </p>
                         </div>
-                        <div class="flex jus-between margin-t20">
-                          <div class="goodsimg flex jus-start align-c">
-                            <img :src="good.original_img" alt />
-                          </div>
-                          <p class="goodsdetail">{{good.goods_name}}</p>
-                          <div class="goodproceAnum">
-                            <span>￥{{good.attr_price}}</span>
-                            <span class="goodsnum">x {{good.goods_num}}</span>
-                          </div>
+                        <span class="maincolor">待付款</span>
+                      </div>
+                      <div class="flex jus-between margin-t20"  @click='orderdetail(0)'>
+                        <div class="goodsimg flex jus-start align-c">
+                          <img :src="good.original_img" alt />
                         </div>
-                        <p class="total">共{{good.goods_num}}件商品 合计：￥{{good.total_amount}}</p>
-                        <div class="btnlist">
-                          <a href="javascript:void(0)" class="maincolor font-16 checkbtn">取消订单</a>
+                        <p class="goodsdetail">{{good.goods_name}}</p>
+                        <div class="goodproceAnum">
+                          <span>￥{{good.attr_price}}</span>
+                          <span class="goodsnum">x {{good.goods_num}}</span>
                         </div>
                       </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+                      <p class="total">共{{good.goods_num}}件商品 合计：￥{{good.total_amount}}</p>
+                      <div class="btnlist">
+                        <a href="javascript:void(0)" class="maincolor font-16 checkbtn">取消订单</a>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
     </div>
@@ -107,6 +102,9 @@ export default {
     },
     order_ping:function(){
       this.$router.push("/order/order_ping")
+    },
+    orderdetail:function(id){
+      this.$router.push(`/order/orderdetail/${id}`)
     }
   }
 };

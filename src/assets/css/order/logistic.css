@@ -1,0 +1,117 @@
+.logisticmsg{
+    padding-left:120px;
+    padding-right: 20px
+}
+.logisticmsg  ul li{
+    color:#8d8d8d;
+    padding-top:50px;
+}
+.logisticmsg  ul li p{
+    line-height: 32px;
+}
+.logisticmsg  ul li{
+    content:'';
+    padding-left: 78px;
+    position: relative;
+}
+.logisticmsg ul li i{
+   
+    display: block;
+    position: absolute;
+    left: -26px;
+    width:46px;
+    height: 46px;
+    top: 50%;
+}
+.logisticmsg ul li.waitpress i{
+ 
+    background:url("../../images/good/waitpress.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitship i{
+    background:url("../../images/good/waitship.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitremoval i{
+    background:url("../../images/good/waitremoval.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitentrepot i{
+    background:url("../../images/good/waitentrepot.png") no-repeat;
+    background-size: 100%;
+}
+
+.logisticmsg ul li.waitTake i{
+    background:url("../../images/good/waitTake.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitDeli i{
+    background:url("../../images/good/waitDeli.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitde i{
+    background:url("../../images/good/waitde.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.receiveg i{
+    background:url("../../images/good/receiveg.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.reveice i{
+    background:url("../../images/good/reveice.png") no-repeat;
+    background-size: 100%;
+}
+
+
+
+.logisticmsg ul li.now{
+    color:#2c2c2c
+}
+.logisticmsg ul li.waitpress.now i{
+    background:url("../../images/good/press.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitship.now i{
+    background:url("../../images/good/ship.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitremoval.now i{
+    background:url("../../images/good/removal.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitentrepot.now i{
+    background:url("../../images/good/entrepot.png") no-repeat;
+    background-size: 100%;
+}
+
+.logisticmsg ul li.waitTake.now i{
+    background:url("../../images/good/take.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitDeli.now i{
+    background:url("../../images/good/Deli.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li.waitde.now i{
+    background:url("../../images/good/de.png") no-repeat;
+    background-size: 100%;
+}
+.logisticmsg ul li div{
+    position: relative;
+}
+.logisticmsg ul li div:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    border-left: 2px dashed #000;
+    width: 2px;
+  
+    top: 12px;
+    left: -82px;
+    bottom: -70px;
+    z-index: -1;
+}
+.logisticmsg ul li:last-child div:after{
+    border-left:none
+}

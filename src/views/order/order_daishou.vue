@@ -55,6 +55,7 @@
                             <a v-if='good.is_self==0'
                               href="javascript:void(0)"
                               class="maincolor font-16 checkbtn"
+                               @click="logistics()"
                             >查看物流</a>
                           <a
                             href="javascript:void(0)"
@@ -127,6 +128,9 @@ export default {
     },
     order_ping: function() {
       this.$router.push("/order/order_ping");
+    },
+     logistics:function(){
+      this.$router.push("/order/logistics")
     }
   }
 };

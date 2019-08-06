@@ -271,3 +271,49 @@ li, img, label, input {
 .margin-t20{
     margin-top:20px
 }
+
+
+/* 联系客服 */
+.contact {
+    background:rgba(0,0,0,.4);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10;
+}
+.contactimg p {
+    color:#fff;
+}
+.contactimg p span{
+    color:#ffe81c;
+    margin-left:20px;
+}
+.contactimg{
+    background:url("../../images/public/contact.png") no-repeat;
+    background-size:100% ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 680px;
+    height: 688px;
+    text-align: center;
+    line-height: 688px;
+}
+.contactus{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 210px;
+}
+.closeimg{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+}

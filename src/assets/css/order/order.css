@@ -42,7 +42,6 @@
 .productmsg p{
     font-size:26px;
     color:#2c2c2c;
-   
 }
 .productmsg p.storename{
     line-height: 80px
@@ -136,15 +135,43 @@
 
 .settle img{
     width:30px;
-    height:30px;
-    margin-right:20px;
-    padding-left:20px
+    height: 30px;
+    margin-right:10px;
+    margin-left:10px
 }
 .accounts {
     width:200px;
     text-align:center;
     color:#fff;
     margin-left:48px
+}
+#cart-content .qb_tac{
+    padding-top:90px;
+    text-align: center;
+}
+#cart-content .qb_tac p{
+    color: #999;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.qb_gap a{
+    text-align: center;
+    text-decoration: none;
+    line-height: 80px;
+    height: 80px;
+    font-size: 28px;
+    display: block;
+    width: 60%;
+    color: #ffffff!important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius:10px;
+    background-color: #ff4c4c;
+    margin:0 auto;
+    margin-top:60px
+
 }
 
 /* 退款售后 */
@@ -313,11 +340,14 @@
     color:#6a6a6a;
     width:50%;
     float:left;
-    text-align: center
+    text-align: center;
+    height:80px;
+    line-height:80px
 }
 .evalutebox .hd ul li.on{
     color:#ff4c4c;
     border-bottom:2px solid #ff4c4c;
+    
 }
 .evalutebox .hd{
     border-bottom:2px solid #f0f0f0;

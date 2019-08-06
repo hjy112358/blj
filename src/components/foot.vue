@@ -21,7 +21,7 @@
         </div>
         <p></p>
       </li>
-      <li @click="changeimg($event)">
+      <li @click="changeimg($event);shopcar()">
         <div class="footimg">
           <img src="../assets/images/public/shopsCar.png" alt class="before">
           <img src="../assets/images/public/shopsCarActive.png" alt class="hidden after">
@@ -61,6 +61,9 @@ export default {
       $(event.currentTarget).siblings().find(".before").removeClass("hidden")
       $(event.currentTarget).siblings().find(".after").addClass("hidden")
       $(event.currentTarget).siblings().removeClass("on")
+    },
+    shopcar(){
+      this.$router.push("/product/shopcar");
     }
   }
 };

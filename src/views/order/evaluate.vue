@@ -32,14 +32,28 @@
       <div>
         <textarea name="content" id="content" rows="10" placeholder="产品用着还满意吗？请畅所欲言···"></textarea>
       </div>
-      <el-upload
-        action="https://jsonplaceholder.typicode.com/posts/"
-        list-type="picture-card"
-        :on-preview="handlePictureCardPreview"
-        :on-remove="handleRemove"
-      >
-        <i class=""></i>
-      </el-upload>
+      <div class="add-img clearfix" v-show="imgList.length">
+        <ul class="img-list">
+          <li v-for="(url,index) in imgList" :key='index'>
+            <span class="el-icon-circle-close del" @click.stop="delImg(index)" ></span>
+            <img :src="url.file.src" />
+          </li>
+        </ul>
+      </div>
+      <input
+        @change="fileChange($event)"
+        type="file"
+        id="upload_file"
+        multiple
+        style="display: none"
+      />
+      <div class="add" @click="chooseType">
+        <div class="add-image" align="center">
+          <i class="el-icon-camera"></i>
+          <p class="font-16">添加图片</p>
+        </div>
+      </div>
+      
     </div>
 
     <div class="storeEvalute" style="padding-top:10px">
@@ -94,8 +108,11 @@ export default {
       logis: 0,
       serve: 0,
       gradetext: 0,
-       dialogImageUrl: '',
-        dialogVisible: false
+      showFace: false,
+    imgList: [],
+    size: 0,
+    limit:6, //限制图片上传的数量
+    tempImgs:[]
     };
   },
   created: function() {
@@ -112,13 +129,85 @@ export default {
     serves: function(index) {
       this.serve = index;
     },
-     handleRemove(file, fileList) {
-        console.log(file, fileList);
-      },
-      handlePictureCardPreview(file) {
-        this.dialogImageUrl = file.url;
-        this.dialogVisible = true;
+    chooseType() {
+    document.getElementById('upload_file').click();
+   },
+   fileChange(el) {
+    if (!el.target.files[0].size) return;
+    this.fileList(el.target);
+    el.target.value = ''
+   },
+   fileList(fileList) {
+    let files = fileList.files;
+    for (let i = 0; i < files.length; i++) {
+     //判断是否为文件夹
+     if (files[i].type != '') {
+      this.fileAdd(files[i]);
+     } else {
+      //文件夹处理
+      this.folders(fileList.items[i]);
+     }
+    }
+   },
+   //文件夹处理
+   folders(files) {
+    let _this = this;
+    //判断是否为原生file
+    if (files.kind) {
+     files = files.webkitGetAsEntry();
+    }
+    files.createReader().readEntries(function (file) {
+     for (let i = 0; i < file.length; i++) {
+      if (file[i].isFile) {
+       _this.foldersAdd(file[i]);
+      } else {
+       _this.folders(file[i]);
       }
+     }
+    });
+   },
+   foldersAdd(entry) {
+    let _this = this;
+    entry.file(function (file) {
+     _this.fileAdd(file)
+    })
+   },
+   fileAdd(file) {
+    if (this.limit !== undefined) this.limit--;
+    if (this.limit !== undefined && this.limit < 0) return;
+    //总大小
+    this.size = this.size + file.size;
+    //判断是否为图片文件
+    if (file.type.indexOf('image') == -1) {
+     this.$dialog.toast({mes: '请选择图片文件'});
+    } else {
+     let reader = new FileReader();
+     let image = new Image();
+     let _this = this;
+     reader.readAsDataURL(file);
+     reader.onload = function () {
+      file.src = this.result;
+      image.onload = function(){
+       let width = image.width;
+       let height = image.height;
+       file.width = width;
+       file.height = height;
+       _this.imgList.push({
+        file
+       });
+       console.log( _this.imgList);
+      };
+      image.src= file.src;
+     }
+    }
+   },
+   delImg(index) {
+    this.size = this.size - this.imgList[index].file.size;//总大小
+    this.imgList.splice(index, 1);
+    if (this.limit !== undefined) this.limit = 6-this.imgList.length;
+   },
+   displayImg() {
+   }
   }
 };
 </script>

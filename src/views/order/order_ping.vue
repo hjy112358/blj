@@ -52,7 +52,7 @@
                         </div>
                         <p class="total">共{{good.goods_num}}件商品 合计：￥{{good.total_amount}}</p>
                         <div class="btnlist">
-                          <a href="javascript:void(0)" class="maincolor font-16 checkbtn">评价</a>
+                          <a href="javascript:void(0)" class="maincolor font-16 checkbtn " @click="evalute()">评价</a>
                         </div>
                       </div>
                     </a>
@@ -107,6 +107,9 @@ export default {
     },
     order_daifu:function(){
       this.$router.push("/order/order_daifu")
+    },
+     evalute:function(){
+        this.$router.push("/order/evaluate")
     }
   }
 };

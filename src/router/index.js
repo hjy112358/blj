@@ -11,6 +11,8 @@ import storefoot from '@/components/storefoot'
 import Productlist from '@/views/product/productlist'
 import Productdetal from '@/views/product/productDtail'
 import Productdetails from '@/views/product/productdetails'
+// 购物车
+import shopcar from '@/views/product/shopcar'
 // 登录
 import login from '@/views/index/login'
 // 注册
@@ -50,6 +52,11 @@ import order_daifu from '@/views/order/order_daifu'
 import order_daishou from '@/views/order/order_daishou'
 import order_ping from '@/views/order/order_ping'
 import evaluate from '@/views/order/evaluate'
+import orderdetail from '@/views/order/orderdetail'
+import logistics from '@/views/order/logistics'
+import allevaluate from '@/views/order/allevaluate'
+import afterScale from '@/views/order/afterScale'
+import afterScaleDetail from '@/views/order/afterScaleDetail'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -58,8 +65,8 @@ import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/dist/css/swiper.css'
 
 
-Vue.use(VueAwesomeSwiper) 
-Vue.prototype.$echarts = echarts 
+Vue.use(VueAwesomeSwiper)
+Vue.prototype.$echarts = echarts
 Vue.use(Router)
 Vue.use(ElementUI)
 
@@ -83,8 +90,8 @@ export default new Router({
       name: 'profoot',
       component: profoot
     },
-     // 店铺底部
-     {
+    // 店铺底部
+    {
       path: '/storefoot',
       name: 'storefoot',
       component: storefoot
@@ -125,8 +132,8 @@ export default new Router({
       name: 'forget_pwd',
       component: forget_pwd
     },
-     // 个人中心
-     {
+    // 个人中心
+    {
       path: '/user/index',
       name: 'userindex',
       component: userindex
@@ -155,14 +162,14 @@ export default new Router({
       name: 'editpass',
       component: editpass
     },
-     // 个人中心-设置-修改支付密码
-     {
+    // 个人中心-设置-修改支付密码
+    {
       path: '/user/editpaypass',
       name: 'editpaypass',
       component: editpaypass
     },
-     // 个人中心-设置-意见反馈
-     {
+    // 个人中心-设置-意见反馈
+    {
       path: '/user/feedback',
       name: 'feedback',
       component: feedback
@@ -173,8 +180,8 @@ export default new Router({
       name: 'memberegistrate',
       component: memberegistrate
     },
-     // 个人中心-分享二维码
-     {
+    // 个人中心-分享二维码
+    {
       path: '/user/shareCode',
       name: 'shareCode',
       component: shareCode
@@ -197,107 +204,144 @@ export default new Router({
       name: 'accout',
       component: accout
     },
-     //我的钱包-转化-去兑换
-     {
+    //我的钱包-转化-去兑换
+    {
       path: '/wallet/changetick',
       name: 'changetick',
       component: changetick
     },
-     //我的钱包-交易大厅
-     {
+    //我的钱包-交易大厅
+    {
       path: '/wallet/tradingFloor',
       name: 'tradingFloor',
       component: tradingFloor
     },
     //我的钱包-交易大厅-买入
     {
-     path: '/wallet/scaleList',
-     name: 'scaleList',
-     component: scaleList
-   },
-   //我的钱包-分享收益
-   {
-    path: '/wallet/teamReturn',
-    name: 'teamReturn',
-    component: teamReturn
-  },
-   //我的钱包-分享收益-代理收益
-   {
-    path: '/wallet/teamReturnRebate',
-    name: 'teamReturnRebate',
-    component: teamReturnRebate
-  },
-  //我的钱包-分享收益-其他收益
-  {
-   path: '/wallet/teamReturnOther',
-   name: 'teamReturnOther',
-   component: teamReturnOther
- }, //我的钱包-交易记录
- {
-   path: '/wallet/tradeFloorZ',
-   name: 'tradeFloorZ',
-   component: tradeFloorZ
- }, //店铺列表
- {
-   path: '/store/storelist',
-   name: 'storelist',
-   component: storelist
- }, //店铺首页
- {
-   path: '/store/storeindex',
-   name: 'storeindex',
-   component: storeindex
- }, //店铺宝贝
- {
-   path: '/store/storeall',
-   name: 'storeall',
-   component: storeall
- }, //收藏店铺
- {
-   path: '/store/mycollect',
-   name: 'mycollect',
-   component: mycollect
- }
- , //关注店铺
- {
-   path: '/store/intereststore',
-   name: 'intereststore',
-   component: intereststore
- }, //全部订单
- {
-  path: '/order/allorder',
-  name: 'allorder',
-  component: allorder
-},
-// 订单-待发货
-{
-  path: '/order/order_daifa',
-  name: 'order_daifa',
-  component: order_daifa
-},
-// 订单-待付款
-{
-  path: '/order/order_daifu',
-  name: 'order_daifu',
-  component: order_daifu
-},
-// 订单-待收货
-{
-  path: '/order/order_daishou',
-  name: 'order_daishou',
-  component: order_daishou
-},
-// 订单-待评价
-{
-  path: '/order/order_ping',
-  name: 'order_ping',
-  component: order_ping
-},
-// 订单-评价
-{
-  path: '/order/evaluate',
-  name: 'evaluate',
-  component: evaluate
-}
+      path: '/wallet/scaleList',
+      name: 'scaleList',
+      component: scaleList
+    },
+    //我的钱包-分享收益
+    {
+      path: '/wallet/teamReturn',
+      name: 'teamReturn',
+      component: teamReturn
+    },
+    //我的钱包-分享收益-代理收益
+    {
+      path: '/wallet/teamReturnRebate',
+      name: 'teamReturnRebate',
+      component: teamReturnRebate
+    },
+    //我的钱包-分享收益-其他收益
+    {
+      path: '/wallet/teamReturnOther',
+      name: 'teamReturnOther',
+      component: teamReturnOther
+    }, //我的钱包-交易记录
+    {
+      path: '/wallet/tradeFloorZ',
+      name: 'tradeFloorZ',
+      component: tradeFloorZ
+    }, //店铺列表
+    {
+      path: '/store/storelist',
+      name: 'storelist',
+      component: storelist
+    }, //店铺首页
+    {
+      path: '/store/storeindex',
+      name: 'storeindex',
+      component: storeindex
+    }, //店铺宝贝
+    {
+      path: '/store/storeall',
+      name: 'storeall',
+      component: storeall
+    }, //收藏店铺
+    {
+      path: '/store/mycollect',
+      name: 'mycollect',
+      component: mycollect
+    }
+    , //关注店铺
+    {
+      path: '/store/intereststore',
+      name: 'intereststore',
+      component: intereststore
+    }, //全部订单
+    {
+      path: '/order/allorder',
+      name: 'allorder',
+      component: allorder
+    },
+    // 订单-待发货
+    {
+      path: '/order/order_daifa',
+      name: 'order_daifa',
+      component: order_daifa
+    },
+    // 订单-待付款
+    {
+      path: '/order/order_daifu',
+      name: 'order_daifu',
+      component: order_daifu
+    },
+    // 订单-待收货
+    {
+      path: '/order/order_daishou',
+      name: 'order_daishou',
+      component: order_daishou
+    },
+    // 订单-待评价
+    {
+      path: '/order/order_ping',
+      name: 'order_ping',
+      component: order_ping
+    },
+    // 订单-评价
+    {
+      path: '/order/evaluate',
+      name: 'evaluate',
+      component: evaluate
+    },
+    // 订单-评价
+    {
+      path: '/order/orderdetail/:id',
+      name: 'orderdetail',
+      component: orderdetail
+    },
+    // 订单-查看物流
+    {
+      path: '/order/logistics',
+      name: 'logistics',
+      component: logistics
+    },
+     // 我的订单-评价
+     {
+      path: '/order/allevaluate',
+      name: 'allevaluate',
+      component: allevaluate
+    },
+    // 我的订单-退款售后
+    {
+      path: '/order/afterScale',
+      name: 'afterScale',
+      component: afterScale
+    },
+    // 我的订单-退款售后详情
+    {
+      path: '/order/afterScaleDetail',
+      name: 'afterScaleDetail',
+      component: afterScaleDetail
+    },
+     // 购物车
+     {
+      path: '/product/shopcar',
+      name: 'shopcar',
+      component: shopcar
+    },
+    
   ]
 })
