@@ -19,7 +19,9 @@
                   <div class="productmsg">
                     <div class="flex jus-between align-c">
                       <div class="flex jus-start align-c">
-                        <img src="../../assets/images/good/waitcheck.png" alt class="checkimg" />
+                        <div class="checkimg" style="margin-top:3px">
+                          <input type="checkbox" class="inputcheck" />
+                        </div>
                         <img src="../../assets/images/good/store.png" alt class="store" />
                         <p class="proname">
                           {{pro.name}}
@@ -29,13 +31,13 @@
                       <span class="maincolor">领券</span>
                     </div>
                     <div
-                      class="flex jus-start margin-t10 margin-b20"
+                      class="flex jus-start margin-t10 margin-b20 align-c pos-r" 
                       style="padding-bottom:10px"
-                      v-for="(pros,index) in pro.prokids"
-                      :key="index"
+                      v-for="(pros,index1) in pro.prokids"
+                      :key="index1"
                     >
-                      <div class="flex align-c">
-                        <img src="../../assets/images/good/waitcheck.png" alt class="checkimg" />
+                      <div class="checkimg">
+                        <input type="checkbox" class="inputcheck" />
                       </div>
                       <div class="goodsimg flex jus-start align-c">
                         <img :src="pros.img" alt />
@@ -48,12 +50,14 @@
                         >
                           <span class="maincolor">￥{{pros.price}}</span>
                           <div class="flex jus-between align-c shopNum">
-                            <a href="javascript:void(0)">-</a>
-                            <input type="text" v-model="pros.num" />
-                            <a href="javascript:void(0)">+</a>
+                            <a href="javascript:void(0)" @click="sub(index,index1)">-</a>
+                            <input type="text" v-model="pros.num" readonly />
+                            <a href="javascript:void(0)" @click="add(index,index1)">+</a>
                           </div>
+                          
                         </div>
                       </div>
+                      <div class="del el-icon-delete"></div>
                     </div>
                   </div>
                 </li>
@@ -64,16 +68,16 @@
       </div>
 
       <div class="settle flex jus-between align-c">
-        <div class="flex jus-start align-c">
-          <img src="../../assets/images/good/waitcheck.png" alt />
-          <p class="font-16">全选</p>
+        <div class="flex jus-start align-c" style="margin-left:15px">
+          <input type="checkbox" class="inputcheck" id="checkall" />
+          <label for="checkall" class="font-16" style="margin-left:15px">全选</label>
         </div>
         <div class="flex jus-start align-c">
           <p class="font-16">
             合计：
             <span class="maincolor font-16">￥400</span>
           </p>
-          <p class="accounts font-18 maincolorbg">结算(1)</p>
+          <p class="accounts font-18 maincolorbg">结算({{totalnum}})</p>
         </div>
       </div>
     </div>
@@ -81,12 +85,12 @@
 </template>
 <style scoped>
 @import "../../assets/css/order/order.css";
-.productmsglist ul li{
-    margin-top:0;
-    margin-bottom:30px
+.productmsglist ul li {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
-.productmsg .proname{
-    line-height: 70px
+.productmsg .proname {
+  line-height: 70px;
 }
 </style>
 <script>
@@ -126,7 +130,8 @@ export default {
             }
           ]
         }
-      ]
+      ],
+      totalnum:0
     };
   },
   created: function() {
@@ -141,10 +146,35 @@ export default {
     next();
   },
   methods: {
-    goindex:function() {
-      this.$router.push("/");
+    goindex: function() {
+      this.$router.push("/");                             
+    },
+    sub: function(index, index1) {
+      var list = this.produlist;
+      var num = list[index].prokids[index1].num;
+      if (num > 1) {
+        num = parseInt(num) - 1;
+        list[index].prokids[index1].num = num;
+      }
+    },
+    add:function(index, index1) {
+      var list = this.produlist;
+      var num = list[index].prokids[index1].num;
+      num = parseInt(num) + 1;
+      list[index].prokids[index1].num = num;
+    },
+    total:function(){
+      var nums=0
+      $.each(this.produlist,function(i,v){
+          // console.log(v.prokids)
+          $.each(v.prokids,function(is,vs){
+              nums=parseInt(nums)+parseInt(vs.num)
+          })
+      })
+     this.totalnum=nums
     }
-  }
+  },
+ 
 };
 </script>
 
