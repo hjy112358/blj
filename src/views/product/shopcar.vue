@@ -20,7 +20,12 @@
                     <div class="flex jus-between align-c">
                       <div class="flex jus-start align-c">
                         <div class="checkimg" style="margin-top:3px">
-                          <input type="checkbox" class="inputcheck" />
+                          <input
+                            type="checkbox"
+                            class="inputcheck"
+                            @click="Checkpro(pro,index)"
+                            v-model="pro.ischeck"
+                          />
                         </div>
                         <img src="../../assets/images/good/store.png" alt class="store" />
                         <p class="proname">
@@ -31,13 +36,18 @@
                       <span class="maincolor">领券</span>
                     </div>
                     <div
-                      class="flex jus-start margin-t10 margin-b20 align-c pos-r" 
+                      class="flex jus-start margin-t10 margin-b20 align-c pos-r"
                       style="padding-bottom:10px"
                       v-for="(pros,index1) in pro.prokids"
                       :key="index1"
                     >
                       <div class="checkimg">
-                        <input type="checkbox" class="inputcheck" />
+                        <input
+                          type="checkbox"
+                          class="inputcheck"
+                          @click="CheckItem(pros,index)"
+                          v-model="pros.checkstatus"
+                        />
                       </div>
                       <div class="goodsimg flex jus-start align-c">
                         <img :src="pros.img" alt />
@@ -54,7 +64,6 @@
                             <input type="text" v-model="pros.num" readonly />
                             <a href="javascript:void(0)" @click="add(index,index1)">+</a>
                           </div>
-                          
                         </div>
                       </div>
                       <div class="del el-icon-delete"></div>
@@ -69,7 +78,13 @@
 
       <div class="settle flex jus-between align-c">
         <div class="flex jus-start align-c" style="margin-left:15px">
-          <input type="checkbox" class="inputcheck" id="checkall" />
+          <input
+            type="checkbox"
+            class="inputcheck"
+            id="checkall"
+            @click="allcheck()"
+            v-model="checkall"
+          />
           <label for="checkall" class="font-16" style="margin-left:15px">全选</label>
         </div>
         <div class="flex jus-start align-c">
@@ -77,7 +92,7 @@
             合计：
             <span class="maincolor font-16">￥400</span>
           </p>
-          <p class="accounts font-18 maincolorbg">结算({{totalnum}})</p>
+          <p class="accounts font-18 maincolorbg" @click="settle()">结算</p>
         </div>
       </div>
     </div>
@@ -101,37 +116,43 @@ export default {
       produlist: [
         {
           name: "小天才儿童智能电话手表防水",
+          ischeck: false,
           prokids: [
             {
               img:
                 "http://2019-05-31.oss-cn-shanghai.aliyuncs.com/d7d2d3596ab46e240aa97fbeb31018dc42f16dba.jpeg",
               prodetail: "儿童智能电话手表防水定位拍照多功能儿童智能电话手表防",
               price: "89",
-              num: "1"
+              num: "1",
+              checkstatus: false
             },
             {
               img:
                 "http://2019-05-31.oss-cn-shanghai.aliyuncs.com/d7d2d3596ab46e240aa97fbeb31018dc42f16dba.jpeg",
               prodetail: "儿童智能电话手表防水定位拍照多功能儿童智能电话手表防",
               price: "89",
-              num: "2"
+              num: "2",
+              checkstatus: false
             }
           ]
         },
         {
           name: "小天才儿童智能电话手表防水1",
+          ischeck: false,
           prokids: [
             {
               img:
                 "http://2019-05-31.oss-cn-shanghai.aliyuncs.com/d7d2d3596ab46e240aa97fbeb31018dc42f16dba.jpeg",
               prodetail: "儿童智能电话手表防水定位拍照多功能儿童智能电话手表防",
               price: "89",
-              num: "1"
+              num: "1",
+              checkstatus: false
             }
           ]
         }
       ],
-      totalnum:0
+      totalnum: 0,
+      checkall: false
     };
   },
   created: function() {
@@ -147,7 +168,7 @@ export default {
   },
   methods: {
     goindex: function() {
-      this.$router.push("/");                             
+      this.$router.push("/");
     },
     sub: function(index, index1) {
       var list = this.produlist;
@@ -157,24 +178,74 @@ export default {
         list[index].prokids[index1].num = num;
       }
     },
-    add:function(index, index1) {
+    add: function(index, index1) {
       var list = this.produlist;
       var num = list[index].prokids[index1].num;
       num = parseInt(num) + 1;
       list[index].prokids[index1].num = num;
     },
-    total:function(){
-      var nums=0
-      $.each(this.produlist,function(i,v){
-          // console.log(v.prokids)
-          $.each(v.prokids,function(is,vs){
-              nums=parseInt(nums)+parseInt(vs.num)
-          })
-      })
-     this.totalnum=nums
+    // 全选
+    total: function(status) {
+      var nums = 0;
+      $.each(this.produlist, function(i, v) {
+        v.ischeck = status;
+        $.each(v.prokids, function(is, vs) {
+          nums = parseInt(nums) + parseInt(vs.num);
+          vs.checkstatus = status;
+        });
+      });
+      this.totalnum = nums;
+    },
+    totalstore: function(index, status) {
+      var storelist = this.produlist[index].prokids;
+      $.each(storelist, function(is, vs) {
+        vs.checkstatus = status;
+      });
+    },
+    allcheck: function() {
+      this.checkall = !this.checkall;
+      this.total(this.checkall);
+    },
+    CheckItem: function(pro, index) {
+      pro.checkstatus = !pro.checkstatus;
+      var lenth = this.produlist[index].prokids.length;
+      var storelist = this.produlist[index].prokids;
+      var check = lenth;
+      $.each(storelist, function(is, vs) {
+        if (!vs.checkstatus) {
+          --check;
+        }
+      });
+      if (check == lenth) {
+        this.produlist[index].ischeck = true;
+      } else {
+        this.produlist[index].ischeck = false;
+      }
+      this.ischeckall();
+    },
+    Checkpro: function(pro, index) {
+      pro.ischeck = !pro.ischeck;
+      this.totalstore(index, pro.ischeck);
+      this.ischeckall();
+    },
+    ischeckall: function() {
+      var lenght = this.produlist.length;
+      var check = 0;
+      $.each(this.produlist, function(i, v) {
+        if (v.ischeck) {
+          ++check;
+        }
+      });
+      if (check == lenght) {
+        this.checkall = true;
+      }else{
+        this.checkall = false;
+      }
+    },
+    settle:function(){
+      this.$router.push("/order/settle")
     }
-  },
- 
+  }
 };
 </script>
 

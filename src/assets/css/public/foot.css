@@ -100,3 +100,46 @@
   width:40px;
   height: 40px;
 }
+
+
+/* b模式底部 */
+.patternbfooter ul li{
+  width:33.3%;
+  float:left;
+  text-align:center;
+  padding-top:20px;
+}
+.patternbfooter{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 14px;
+  box-shadow: 0 -4px 10px #f5f6f5;
+  background:#fff;
+}
+.patternbfooter ul li p{
+  color:#000;
+  margin-top:13px;
+}
+.starnow ul li {
+  float:left;
+  width:33.3%;
+  text-align: right;
+}
+.starnow ul li img{
+  width:1.75rem;
+  height:1.55rem;
+
+}
+.starnow{
+  line-height: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+.animated{
+  animation-iteration-count:infinite;
+  animation-duration:1s;
+  -webkit-animation-duration:1s; /* Safari 和 Chrome */
+}

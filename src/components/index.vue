@@ -69,10 +69,10 @@
               <span>VIP中心</span>
             </a>
           </li>
-          <li>
+          <li @click="patternb()">
             <a href="javascript:void(0)">
-              <img alt="购物车" src="../assets/images/index/shopcar.png">
-              <span>联营消费</span>
+              <img alt="b模式" src="../assets/images/index/b-vip.png">
+              <span>B-VIP</span>
             </a>
           </li>
           <li>
@@ -82,9 +82,9 @@
             </a>
           </li>
           <li>
-            <a href="https://blj.ubaoliao.com/#/">
-              <img alt="淘宝" src="../assets/images/index/taobao.png">
-              <span>淘宝</span>
+            <a href="http://stork36.cn/index.html">
+              <img alt="淘宝" src="../assets/images/index/jdb.png">
+              <span>京多宝</span>
             </a>
           </li>
           <li>
@@ -353,7 +353,7 @@ export default {
       },
       swiperOption3: {
          pagination: '.swiper-pagination',  // 分页按钮
-       autoplay:200
+       autoplay:2000
       },
 
       swiperList: [
@@ -415,6 +415,9 @@ export default {
     },
     storelist:function(){
       this.$router.push('/store/storelist')
+    },
+    patternb:function(){
+      this.$router.push('/patternb/mypatternb')
     }
 
   },

@@ -7,6 +7,10 @@ import foot from '@/components/foot'
 import profoot from '@/components/product_foot'
 // 店铺底部
 import storefoot from '@/components/storefoot'
+// B模式底部
+import patterbfoot from '@/components/patterbfoot'
+// B模式头部
+import patterbhead from '@/components/patterbhead'
 // 产品
 import Productlist from '@/views/product/productlist'
 import Productdetal from '@/views/product/productDtail'
@@ -57,6 +61,16 @@ import logistics from '@/views/order/logistics'
 import allevaluate from '@/views/order/allevaluate'
 import afterScale from '@/views/order/afterScale'
 import afterScaleDetail from '@/views/order/afterScaleDetail'
+import settle from '@/views/order/settle'
+import receivelist from '@/views/order/receivelist'
+import newrece from '@/views/order/newrece'
+import orderCreate from '@/views/order/orderCreate'
+import paystatus from '@/views/order/paystatus'
+// B模式
+import mypatternb from '@/views/patternb/mypatternb'
+import buyIn from '@/views/patternb/buyIn'
+
+
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -95,6 +109,18 @@ export default new Router({
       path: '/storefoot',
       name: 'storefoot',
       component: storefoot
+    },
+    // b模式底部
+    {
+      path: '/patterbfoot',
+      name: 'patterbfoot',
+      component: patterbfoot
+    },
+     // B模式头部
+     {
+      path: '/patterbhead',
+      name: 'patterbhead',
+      component: patterbhead
     },
     // 商品列表
     {
@@ -318,8 +344,8 @@ export default new Router({
       name: 'logistics',
       component: logistics
     },
-     // 我的订单-评价
-     {
+    // 我的订单-评价
+    {
       path: '/order/allevaluate',
       name: 'allevaluate',
       component: allevaluate
@@ -336,12 +362,55 @@ export default new Router({
       name: 'afterScaleDetail',
       component: afterScaleDetail
     },
-     // 购物车
-     {
+    // 购物车
+    {
       path: '/product/shopcar',
       name: 'shopcar',
       component: shopcar
     },
+    // 结算订单
+    {
+      path: '/order/settle',
+      name: 'settle',
+      component: settle
+    },
+    // 收货列表
+    {
+      path: '/order/receivelist',
+      name: 'receivelist',
+      component: receivelist
+    },
+    // 新增收货地址
+    {
+      path: '/order/newrece',
+      name: 'newrece',
+      component: newrece
+    },
+    // 生成订单
+    {
+      path: '/order/orderCreate',
+      name: 'orderCreate',
+      component: orderCreate
+    },
+    // 订单支付状态
+    {
+      path: '/order/paystatus',
+      name: 'paystatus',
+      component: paystatus
+    },
+    // B模式首页
+    {
+      path: '/patternb/mypatternb',
+      name: 'mypatternb',
+      component: mypatternb
+    },
+    // B模式-购物车
+    {
+      path: '/patternb/buyIn',
+      name: 'buyIn',
+      component: buyIn
+    },
+    
     
   ]
 })

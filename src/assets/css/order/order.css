@@ -329,7 +329,8 @@
     border-radius: 20px;
     text-align: center;
     margin:0 auto;
-   margin-top:400px
+    margin-top:400px;
+    font-size:28px
 }
 
 /* 订单详情 */

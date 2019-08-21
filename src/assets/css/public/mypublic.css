@@ -317,3 +317,15 @@ li, img, label, input {
     width: 80px;
     height: 80px;
 }
+
+/* 轮播图 */
+.van-swipe__indicator{
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background:rgba(255,255,255,0.8);
+    margin-left:8px;
+}
+.van-swipe__indicator--active{
+    background:#fff
+}

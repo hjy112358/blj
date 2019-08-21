@@ -1,0 +1,747 @@
+/* b-vip店铺 */
+.productitle{
+    width:391px;
+    height: 97px;
+    margin:0 auto;
+    margin-bottom:50px;
+}
+
+
+.promotionlist{
+    margin-top:70px;
+    padding:0 0.25rem;
+}
+
+.promotdetail ul li{
+    background:url("../../images/patternb/smallbg.png");
+    height: 338px;
+    background-size:100% 338px;
+
+}
+
+.promotebox .promoteimg{
+    width:271px;
+    height: 194px;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+.promotdetail ul li{
+    margin-bottom:1.25rem
+}
+.promotdetail ul li .promotebox{
+    padding:65px 50px;
+}
+.promotebox .promoteimg img{
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+.promotedes{
+    font-size: 16px;
+    color:#734a34;
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow:ellipsis;/* 超出部分显示省略号 */
+    white-space: nowrap;/*规定段落中的文本不进行换行 */
+    margin-bottom:0.1rem;
+}
+.promotetype{
+    font-size:40px;
+    color:#fa6e00;
+    font-weight: 700;
+    width:8.5rem;
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow:ellipsis;/* 超出部分显示省略号 */
+    white-space: nowrap;/*规定段落中的文本不进行换行 */
+  
+}
+.bigScale{
+    font-size:0.5rem;
+    color:#2f2e2e;
+    margin-left: 0.25rem;
+    line-height:0.5rem
+}
+.promoteTypedetail{
+    font-size:24px;
+    color:#fa6e00;
+    width:8.4rem;
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow:ellipsis;/* 超出部分显示省略号 */
+    white-space: nowrap;/*规定段落中的文本不进行换行 */
+}
+.bigPrice{
+    color:#fd2820;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0.35rem
+}
+.bigPrice i{
+    font-size: 0.65rem;
+}
+.promotetext{
+    max-width: 348px
+}
+.promotename{
+    border-top:4px solid #fe6d02;
+    border-bottom:4px solid #fe6d02;
+    padding:2px 0;
+  
+}
+.promotebtn img{
+    width:0.575rem;
+    height: 0.575rem;;
+}
+.promotebtn a{
+    width: 4rem;
+    height: 2rem;
+    background: #fd2820;
+    color: #fff;
+    font-size:30px;
+    line-height: 2rem;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    float:right;
+    margin-top: 10px;
+}
+
+.promoteminilist ul li{
+    width:50%;
+    float:left;
+    background:url("../../images/patternb/bigbg.png") no-repeat;
+    background-size: 100% 396px;
+    height: 396px;
+    margin-bottom:1rem
+}
+.promoteminilist ul li>div{
+    padding:1.5rem 0.625rem;
+    height: 7.65rem;
+}
+.minliimg{
+    width:270px;
+    height:180px;
+    margin:0 auto;
+    margin-bottom:0.4rem;
+    overflow: hidden;
+    border-radius: 0.25rem
+}
+.minititle{
+    font-size:32px;
+    color:#482404;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    border-top:2px dashed #563006;
+    border-bottom:2px dashed #563006;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 6px;
+}
+.minihot{
+    font-size: 0.45rem;
+    color:#2f2e2e;
+    text-align: right
+}
+.miniprice{
+    font-size: 1.1rem;
+    color:#fd2820;
+    font-weight: 700
+}
+.miniprice span{
+    font-size: 0.65rem
+}
+.promoteminilist .promotebtn a{
+    width: 3.6rem;
+    padding-left: 0.3rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    margin-top: 0.35rem;
+}
+
+.promoteminilist .promotebtn{
+    margin-top:-0.1rem;
+}
+
+
+/* 资产包 */
+.picScroll .hd ul li{
+   display: none;
+}
+
+.picScroll .bd {
+    margin-top:1.25rem !important;
+    margin-left: 0.25rem !important
+}
+.picScroll .bd ul li{
+    width:8.375rem;
+    background:#fff;
+    position: relative;
+    box-shadow:0px 0px 0.25rem rgba(0,0,0,.5);   
+    padding-bottom: 0.5rem;
+    float:left;
+    margin-left:0.5rem;
+}
+.picScroll .bd ul li .pooltop{
+    height:4.5rem;
+    background:#ff4c4c
+}
+.pooltop .poolprice{
+    color:#fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top:0.75rem;
+}
+.poolpricebox{
+    border:0.25rem solid rgba(255,255,255,.5);
+    border-radius: 50%;
+    text-align: center;
+    width:3.35rem;
+    height: 3.35rem;
+    margin:0 auto;
+    margin-top:-1.675rem;
+}
+.poolbg{
+    background:#fff;
+    border-radius: 50%;
+    width: 3.35rem;
+    height: 3.35rem;
+}
+.poolpricebox p{
+    color:#ff4c4c;
+    font-size: 0.75rem;
+}
+.poolpricebox .poolboxprice{
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-top:0.8rem
+}
+.poolpricebox .poolboxprice span{
+    font-size: 0.5rem;
+    font-weight: normal
+}
+.poolinform{
+    color:#999999;
+    font-size:0.65rem;
+    padding:0 1.25rem
+}
+.poolinform p{
+    text-align: center;
+    line-height: 1.15rem
+}
+.poolinform a.buynow{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 3.75rem;
+    display: block;
+    color: #fff;
+    background: #ff4c4c;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0.5rem auto;
+    font-size: 0.65rem;
+   
+}
+.poolprolist{
+    margin-top:1.25rem;
+}
+.poolprolist ul li{
+    background:#fff;
+    padding:1.25rem;
+    margin-bottom:0.5rem;
+}
+.poolproimg{
+    width:6.375rem;
+    height:6.5rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+.poolproimg img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+.pooltitle{
+    color:#404040;
+    font-size:0.75rem;
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow:ellipsis;/* 超出部分显示省略号 */
+    white-space: nowrap;/*规定段落中的文本不进行换行 */
+    -webkit-box-orient: vertical;
+    margin-top:0.5rem
+}
+.poolnum{
+    font-size:0.6rem;
+    color:#f54029;
+    border:1px solid #f54029;
+    padding:5px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top:0.6rem;
+    margin-bottom: 1rem;
+}
+.poolPerson{
+    font-size:0.5rem;
+    color:#cccccc;
+}
+
+.poolproPrice{
+    color:#fd2820;
+    font-size:0.9rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+}
+.poolproPrice span{
+    font-weight: normal;
+    font-size:0.6rem
+}
+.stock{
+    color:#e9353e !important;
+    font-size:0.675rem !important;;
+    width:4.7rem;
+    height:1.75rem;
+    line-height:1.75rem;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    background:#ffebe8
+}
+.poolprotext{
+    width:9.3rem;
+}
+
+/* 我的资产包 */
+.mypool{
+    background:#fff;
+}
+.mypoolmsgbox{
+    background:url("../../images/patternb/poolbg.png") no-repeat;
+    background-size: 100% 16.5rem;
+    height: 16.5rem;
+    overflow: hidden;
+
+}
+.mypoolmsg{
+    width: 18rem;
+    background: rgba(255,255,255,.3);
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0 1.25rem;
+    padding-bottom: 0.5rem;
+}
+.mypoolimg{
+    width:3.5rem;
+    height:3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:0 auto;
+    padding-top:0.25rem
+}
+.mypoolimg img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.mypoolid {
+    color:#fff;
+    font-size: 24px;
+    text-align: center;
+    margin-top:0.5rem;
+    margin-bottom: 0.75rem;
+}
+.mypoolid p{
+    line-height: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
+.progressbar{
+    border-radius: 0.5rem !important;
+}
+.proggress{
+	height: 0.75rem !important;
+	width: 20px;
+    background-color: #ff4c4c !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+.detailboxtext{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.detailboxtime{
+    line-height: 0.7rem;
+    width: 7.25rem;
+    font-size: 0.6rem;
+    text-align: right;
+}
+
+.percentCount{
+	float:right;
+	clear: both;
+	font-weight: bold;
+	font-family: Arial
+}
+
+.gradeoneline p{
+    color:#7a5b2a;
+    font-size:0.45rem;
+    line-height: initial;
+    margin-bottom: -10px;
+}
+.gradeoneline span{
+    color:#999999
+}
+.percentCount{
+    line-height: initial;
+    font-size: 0.6rem;
+    color: #fff;
+}
+
+.gradeclass span{
+    color:#fff;
+    font-size: 0.6rem;
+
+}
+.gradeclass{
+    width: 100%;
+    margin-bottom: 0.4rem;
+}
+
+.mypooldetailbox{
+    padding:0 1.25rem;
+    margin-top: 0.6rem;
+}
+.shortype,.hightype{
+    float:left;
+    width:50%;
+    text-align: center;
+    font-size: 0.7rem;
+    border-bottom:2px solid #ffeded;
+    box-sizing: border-box;
+}
+.shortype a,.hightype a{
+    color:#ff4c4c;
+}
+.shortype p,.hightype p{
+    padding:0.75rem 0;
+}
+.hightype{
+    padding-top:1.25rem
+}
+.bor-r{
+    border-right:2px solid #ffeded
+}
+.poolordertop{
+    height:2.5rem;
+    line-height: 2.5rem;
+    color:#333333;
+    font-size: 0.75rem;
+}
+.poolordertop .allorder{
+    color:#999999;
+    font-size: 0.6rem;
+}
+.poolordertop .allorder span{
+    margin-left: 1rem;
+}
+.detailhead {
+    font-size:0.6rem;
+    color:#6c6c6c;
+}
+.detailhead span{
+    color:#ff4c4c
+}
+.detailhead {
+    border-bottom:2px solid #898989;
+    padding-bottom:0.5rem;
+}
+.mypoolorderdetail .detailist ul li{
+    line-height: 2.25rem;
+    height: 2.25rem;
+    margin-left: 1.4rem;
+    position: relative;
+    border-bottom:2px solid #d7d5d8
+}
+
+.mypoolorderdetail .detailist ul li img{
+    position: absolute;
+    top: 0.65rem;
+    left: -1.3rem;
+    width:0.875rem;
+    height:0.875rem;
+    
+}
+.mypoolorderdetail  .detailbox{
+    width:100%;
+    font-size: 0.65rem;
+}
+.mypoolorderdetail>ul>li{
+    margin-bottom:1.25rem;
+}
+/* 我的团队 */
+
+.myteambox{
+    padding:0 0.5rem;
+}
+.myteambox .mypoolorder{
+    background: #fff;
+    padding: 0 0.5rem;
+}
+.myteambox .mypoolorderdetail{
+    min-height: 600px;
+}
+.myteambox .mypoolorder .detailbox{
+    color:#666;
+}
+.myteambox .mypoolorder .detailist ul li{
+    margin-left: 0;
+    border-bottom:2px dashed #e4e4e4;
+    height: 2.25rem;
+    line-height: 2.25rem
+}
+.myteambox .mypoolorder .detailist ul li img{
+    position:static;
+    margin-right:0.75rem;
+    width: 0.925rem;
+    height: 0.925rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* 结算 */
+.accountbox{
+    background:#fff;
+    border-radius: 10px;
+    margin:0 0.75rem;
+    margin-top:0.625rem;
+    padding:0.625rem;
+    padding-bottom:0;
+    overflow: hidden;
+}
+.accoutitle{
+    border-bottom:2px solid #f0f0f0;
+    padding-bottom:0.5rem;
+}
+.accoutitle  img{
+    width:0.675rem;
+    height:0.6rem;
+}
+
+.accoutitle p{
+    color:#3d413f;
+    font-size:0.65rem;
+    margin-left: 0.4rem;
+}
+.accoutlist ul li{
+    padding:0.75rem 0;  
+    border-bottom:2px solid #f0f0f0;
+    position:relative
+}
+.accoutimg{
+    widows: 3.5rem;
+    height: .35rem;
+    margin-right: 0.75rem;
+}
+.accoutimg img {
+    margin-left: 0.2rem;
+    border-radius:10px;
+    overflow: hidden;
+}
+.accoutdetail  p{
+    font-size: 0.65rem
+}
+.accoutdetail  .accoutype{
+    font-size: 0.75rem;
+    margin-bottom:0.75rem;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    display:-webkit-box; 
+    -webkit-box-orient:vertical; 
+    -webkit-line-clamp:2; 
+}
+.accoutdetail{
+    width:11.7rem;
+}
+.accoutnum{
+    text-align:right;
+    color:#333333;
+  
+}
+.paybox {
+    font-size: 0.65rem;
+    height:2rem;
+    line-height: 2rem;
+    border-bottom:2px solid #f0f0f0;
+}
+.yuepay{
+    border-bottom:0
+}
+.paybtn a{
+    display:block;
+    width:13rem;
+    height:2.25rem;
+    line-height:2.25rem;
+    background:#fe4646;
+    color:#fff;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 20px;
+    margin-top:1rem;
+}
+
+
+/* 买入卖出 */
+.scalebottom{
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    padding:0 0.75rem;
+    background:#fff;
+}
+.scalebody label{
+    font-size: 28px;
+    display:inline-block;
+    cursor:pointer;
+    color: #666;
+    margin-left: 0.25rem;
+}
+.scalebody input[type=checkbox] {
+    position: relative;
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 0.1rem;
+}
+ 
+.scalebody input[type=checkbox]::before {
+	content: '';
+	position: absolute;
+    top: -0.4rem;
+    left: -0.25rem;
+	width: 36px;
+	height: 36px;
+	background: url("../../images/patternb/checkbefore.png") no-repeat;
+    background-size:100%;
+}
+ 
+.scalebody input[type=checkbox]:checked::before {
+	color: white;
+    background: url("../../images/patternb/checked.png") no-repeat;
+    content: '';
+    background-size:100%;
+}
+.paymsg p{
+    color:#fc3d42;
+    font-size:28px
+}
+.paymsg a{
+    display: inline-block;
+    width:4.75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    background:#fc3d42;
+    color:#fff;
+    border-radius: 40px;
+    margin-left: 0.75rem;
+    font-size: 0.8rem;
+}
+.scaleOrderbox{
+    margin:0 0.5rem;
+    background:#fff;
+    padding:0.75rem;
+    margin-top:1rem;
+}
+.scaleOrderbox ul li{
+    border-bottom:2px solid #f1f1f1;
+    padding:0.5rem 0;
+}
+
+.scaleimg{
+    width:196px;
+    height:196px;
+    margin-left: 0.5rem;
+    margin-right:0.75rem;
+}
+.scalegoods{
+    color:#333333;
+    font-size:26px;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    display:-webkit-box; 
+    -webkit-box-orient:vertical; 
+    -webkit-line-clamp:2; 
+    margin-bottom:0.5rem
+}
+.scaleout{
+    color:#999999;
+    font-size: 0.45rem;
+    margin-bottom:0.75rem
+}
+.priceAnum p{
+    color:#e01212;
+    font-size:30px;
+
+}
+.scaledetail{
+    width:12rem;
+}
+.priceAnum p span{
+    font-size: 0.45rem;
+}
+.shopcount span,.shopcount input{
+    width:1.25rem;
+    height:1.25rem;
+    line-height:0.9rem;
+    text-align: center;
+    display: block;
+    font-size:0.6rem;
+    color:#333333
+}
+.shopcount input{
+    border:1px solid #e5e5e5;
+    border-top:0;
+    border-bottom:0;
+    width:1.5rem;
+}
+.shopcount{
+    border:1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* 备货记录 */
+.mypoolrecord{
+    background:#f2f2f2
+}
+.myrecord{
+    width: 15rem;
+    overflow: hidden;
+    background:#fff;
+    margin-top:1rem
+}
+.myrecord p{
+    margin:0.5rem 0
+}
+.pooltime{
+    margin-top:0.6rem
+}
+.pooltime span{
+    font-size:0.6rem;
+    line-height:1rem;
+}
