@@ -69,6 +69,10 @@ import paystatus from '@/views/order/paystatus'
 // B模式
 import mypatternb from '@/views/patternb/mypatternb'
 import buyIn from '@/views/patternb/buyIn'
+import seAccout from '@/views/patternb/seAccout'
+import myteam from '@/views/patternb/myteam'
+import scaleOut from '@/views/patternb/scaleOut'
+import myasselpool from '@/views/patternb/myasselpool'
 
 
 
@@ -409,6 +413,30 @@ export default new Router({
       path: '/patternb/buyIn',
       name: 'buyIn',
       component: buyIn
+    },
+     // B模式-购物车-提交订单
+     {
+      path: '/patternb/seAccout',
+      name: 'seAccout',
+      component: seAccout
+    },
+    // B模式-我的团队
+    {
+      path: '/patternb/myteam',
+      name: 'myteam',
+      component: myteam
+    },
+    // B模式-我的资产包
+    {
+      path: '/patternb/scaleOut',
+      name: 'scaleOut',
+      component: scaleOut
+    },
+    // B模式-我的资产包
+    {
+      path: '/patternb/myasselpool',
+      name: 'myasselpool',
+      component: myasselpool
     },
     
     

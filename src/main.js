@@ -5,13 +5,13 @@ import App from './App'
 import router from './router'
 import VueLazyload from 'vue-lazyload'
 // import VueTouch from 'vue-touch'
-import { RadioGroup, Radio,Cell,CellGroup,Swipe, SwipeItem,Stepper,Progress,Rate,SwipeCell,Button } from "vant";
+import { RadioGroup, Radio,Cell,CellGroup,Swipe, SwipeItem,Stepper,Progress,Rate,Button,SwipeCell} from "vant";
 
 
 
 Vue.use(RadioGroup).use(Radio).use(Cell)
 Vue.use(CellGroup).use(Swipe).use(SwipeItem).use(Stepper).use(Progress)
-Vue.use(Rate).use(SwipeCell).use(Button)
+Vue.use(Rate).use(Button).use(SwipeCell)
 Vue.config.productionTip = false
 // Vue.use(VueTouch, {name: 'v-touch'})
 Vue.use(VueLazyload, {

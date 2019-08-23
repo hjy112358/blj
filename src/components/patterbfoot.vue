@@ -53,7 +53,7 @@ export default {
       this.$router.push("/patternb/buyIn");
     },
     myasselpool: function() {
-      this.$router.push("/patternb/asselPool");
+      this.$router.push("/patternb/myasselpool");
     }
   }
 };

@@ -378,11 +378,12 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    font-size:23px;
 }
 .detailboxtime{
     line-height: 0.7rem;
     width: 7.25rem;
-    font-size: 0.6rem;
+    font-size: 23px;
     text-align: right;
 }
 
@@ -435,6 +436,7 @@
 }
 .shortype p,.hightype p{
     padding:0.75rem 0;
+    font-size:28px;
 }
 .hightype{
     padding-top:1.25rem
@@ -446,7 +448,7 @@
     height:2.5rem;
     line-height: 2.5rem;
     color:#333333;
-    font-size: 0.75rem;
+    font-size: 24px;
 }
 .poolordertop .allorder{
     color:#999999;
@@ -467,9 +469,9 @@
     padding-bottom:0.5rem;
 }
 .mypoolorderdetail .detailist ul li{
-    line-height: 2.25rem;
-    height: 2.25rem;
-    margin-left: 1.4rem;
+    line-height: 80px;
+    height:80px;
+    margin-left:60px;
     position: relative;
     border-bottom:2px solid #d7d5d8
 }
@@ -477,14 +479,14 @@
 .mypoolorderdetail .detailist ul li img{
     position: absolute;
     top: 0.65rem;
-    left: -1.3rem;
-    width:0.875rem;
-    height:0.875rem;
+    left: -56px;
+    width:37px;
+    height:40px;
     
 }
 .mypoolorderdetail  .detailbox{
     width:100%;
-    font-size: 0.65rem;
+    font-size:23px
 }
 .mypoolorderdetail>ul>li{
     margin-bottom:1.25rem;
@@ -513,8 +515,8 @@
 .myteambox .mypoolorder .detailist ul li img{
     position:static;
     margin-right:0.75rem;
-    width: 0.925rem;
-    height: 0.925rem;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -533,13 +535,13 @@
     padding-bottom:0.5rem;
 }
 .accoutitle  img{
-    width:0.675rem;
-    height:0.6rem;
+    width:27px;
+    height:24px;
 }
 
 .accoutitle p{
     color:#3d413f;
-    font-size:0.65rem;
+    font-size:26px;
     margin-left: 0.4rem;
 }
 .accoutlist ul li{
@@ -548,8 +550,8 @@
     position:relative
 }
 .accoutimg{
-    widows: 3.5rem;
-    height: .35rem;
+    width:140px;
+    height:140px;
     margin-right: 0.75rem;
 }
 .accoutimg img {
@@ -558,10 +560,10 @@
     overflow: hidden;
 }
 .accoutdetail  p{
-    font-size: 0.65rem
+    font-size: 22px
 }
 .accoutdetail  .accoutype{
-    font-size: 0.75rem;
+    font-size:24px;
     margin-bottom:0.75rem;
     overflow:hidden;
     text-overflow:ellipsis; 
@@ -570,7 +572,7 @@
     -webkit-line-clamp:2; 
 }
 .accoutdetail{
-    width:11.7rem;
+    width:470px;
 }
 .accoutnum{
     text-align:right;
@@ -578,7 +580,7 @@
   
 }
 .paybox {
-    font-size: 0.65rem;
+    font-size: 24px;
     height:2rem;
     line-height: 2rem;
     border-bottom:2px solid #f0f0f0;
@@ -597,6 +599,7 @@
     margin:0 auto;
     border-radius: 20px;
     margin-top:1rem;
+    font-size: 28px;
 }
 
 
@@ -670,6 +673,7 @@
 .scaleOrderbox ul li{
     border-bottom:2px solid #f1f1f1;
     padding:0.5rem 0;
+    position: relative;
 }
 
 .scaleimg{
@@ -748,3 +752,46 @@
     font-size:0.6rem;
     line-height:1rem;
 }
+
+
+/* 滑动删除 */
+.scaleOrderbox ul li ,
+.accoutlist ul li{
+    transform: translateX(0);
+    transition: all 0.3s; /*滑动效果更生动*/
+}
+.scaleOrderbox ul,
+.accoutlist ul {
+    overflow-x: hidden; /*隐藏ul x轴的滚动条*/
+}
+.scaleOrderbox li.move,
+.accoutlist li.move {
+    transform: translateX(-60px); /*滑动后x轴位移-60px,使其可见*/
+}
+.scaleOrderbox li.movec,
+.accoutlist li.movec{
+    transform: translateX(-100px);
+}
+.scaleOrderbox .del,
+.accoutlist .del {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    z-index: 3;
+    width: 60px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    transform: translateX(60px); /*默认x轴位移60px，使其隐藏*/
+    font-size: 22px;
+    background:#ff4c4c;
+    color:#fff
+}
+.scaleOrderbox .delcollect,
+.accoutlist .delcollect{
+    height:200px;
+    line-height: 200px;
+    width:100px;
+    transform: translateX(100px); 
+    font-size: 24px
+} 
