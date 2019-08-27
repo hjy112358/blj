@@ -57,7 +57,7 @@
               <span>合约消费</span>
             </a>
           </li>
-          <li>
+          <li @click="partnerall()">
             <a href="javascript:void(0)">
               <img alt="合伙人" src="../assets/images/index/partner.png">
               <span>合伙人</span>
@@ -87,7 +87,7 @@
               <span>京多宝</span>
             </a>
           </li>
-          <li>
+          <li @click="community()">
             <a href="javascript:void(0)">
               <img alt="社区" src="../assets/images/index/associate.png">
               <span>社区</span>
@@ -418,6 +418,12 @@ export default {
     },
     patternb:function(){
       this.$router.push('/patternb/mypatternb')
+    }
+    ,partnerall:function(){
+      this.$router.push('/partner/partner_all')
+    },
+    community:function(){
+      this.$router.push('/community/aboutMe')
     }
 
   },

@@ -154,13 +154,6 @@ export default {
     seAccout: function() {
       this.$router.push("/patternb/seAccout");
     },
-    minus: function() {
-      console.log(1);
-    },
-    /**
-     * 删除item
-     * index是下标
-     */
     deleteItem(index) {
       this.buylists.splice(index, 1);
       // splice方法是删除数组某条数据，或者向某个位置添加数据

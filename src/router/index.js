@@ -11,6 +11,10 @@ import storefoot from '@/components/storefoot'
 import patterbfoot from '@/components/patterbfoot'
 // B模式头部
 import patterbhead from '@/components/patterbhead'
+// 合伙人尾部
+import partnerfoot from '@/components/partnerfoot'
+// 社群头部
+import communityhead from '@/components/communityhead'
 // 产品
 import Productlist from '@/views/product/productlist'
 import Productdetal from '@/views/product/productDtail'
@@ -73,6 +77,14 @@ import seAccout from '@/views/patternb/seAccout'
 import myteam from '@/views/patternb/myteam'
 import scaleOut from '@/views/patternb/scaleOut'
 import myasselpool from '@/views/patternb/myasselpool'
+// 合伙人
+import partner_all from '@/views/partner/partner_all'
+// 社群
+import aboutMe from '@/views/community/aboutMe'
+import comment from '@/views/community/comment'
+import inform from '@/views/community/inform'
+import informdetail from '@/views/community/informdetail'
+import sendMsg from '@/views/community/sendMsg'
 
 
 
@@ -126,6 +138,20 @@ export default new Router({
       name: 'patterbhead',
       component: patterbhead
     },
+     // 合伙人尾部
+     {
+      path: '/partnerfoot',
+      name: 'partnerfoot',
+      component: partnerfoot
+    },
+    
+     // 社群头部
+     {
+      path: '/communityhead',
+      name: 'communityhead',
+      component: communityhead
+    },
+    
     // 商品列表
     {
       path: '/product/productlist',
@@ -438,7 +464,48 @@ export default new Router({
       name: 'myasselpool',
       component: myasselpool
     },
-    
+     // 合伙人
+     {
+      path: '/partner/partner_all',
+      name: 'partner_all',
+      component: partner_all
+    },
+     // 社群-@我
+     {
+      path: '/community/aboutMe',
+      name: 'aboutMe',
+      component: aboutMe
+    }
+    ,
+    // 社群-评论
+    {
+     path: '/community/comment',
+     name: 'comment',
+     component: comment
+   }
+   ,
+    // 社群-通知
+    {
+     path: '/community/inform',
+     name: 'inform',
+     component: inform
+   }
+   ,
+   // 社群-通知详情
+   {
+    path: '/community/informdetail',
+    name: 'informdetail',
+    component: informdetail
+  },
+   // 社群-发帖
+   {
+    path: '/community/sendMsg',
+    name: 'sendMsg',
+    component: sendMsg
+  },
+  
+   
     
   ]
 })
+     

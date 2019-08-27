@@ -14,7 +14,7 @@
             <img
               src="../../assets/images/patternb/poolticket.png"
               alt
-              style="width:2.75rem;height:2.35rem"
+              style="width:2.75rem;height:2.35rem;margin-top:-0.35rem;"
             />
             <p>我的资产包</p>
           </a>

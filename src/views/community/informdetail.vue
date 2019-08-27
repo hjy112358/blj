@@ -1,12 +1,12 @@
 <template>
- <div class='asselPool'>
+ <div class='informdetail'>
 
  </div>
 </template>
 
 <script>
  export default {
-   name:'asselPool',
+   name:'informdetail',
    data () {
      return {
 

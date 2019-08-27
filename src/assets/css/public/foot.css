@@ -143,3 +143,52 @@
   animation-duration:1s;
   -webkit-animation-duration:1s; /* Safari 和 Chrome */
 }
+
+/* 合伙人底部 */
+.partnerfoot{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 9;
+  background: #fff;
+  box-shadow: 0 2px 6px 0px rgba(0,0,0,.6);
+}
+.partnerfoot ul li{
+  float:left;
+  width:33.3%;
+  text-align: center;
+}
+.partnerfoot ul li p{
+  margin-top:2px
+}
+.partnerfoot ul li img{
+  margin-top:20px
+}
+.partnerfoot ul li p{
+  color:#2c2c2c
+}
+
+/* 社群 */
+.communityhead{
+  position: relative;
+}
+.bannerlistbg{
+  background:url("../../images/community/bannerbg.jpg") no-repeat;
+  background-size:100% 318px;
+  height: 318px;
+  padding:0 20px;
+
+}
+
+.bannermark{
+  position: absolute;
+  width: 100%;
+  bottom: -50px;
+  left: 0;
+  z-index: 1;
+}
+.bannermark img{
+  max-width: 100%
+}
