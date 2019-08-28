@@ -85,6 +85,9 @@ import comment from '@/views/community/comment'
 import inform from '@/views/community/inform'
 import informdetail from '@/views/community/informdetail'
 import sendMsg from '@/views/community/sendMsg'
+// 店铺申请
+import storemanindex from '@/views/storeman/storemanindex'
+import proman from '@/views/storeman/proman'
 
 
 
@@ -132,26 +135,26 @@ export default new Router({
       name: 'patterbfoot',
       component: patterbfoot
     },
-     // B模式头部
-     {
+    // B模式头部
+    {
       path: '/patterbhead',
       name: 'patterbhead',
       component: patterbhead
     },
-     // 合伙人尾部
-     {
+    // 合伙人尾部
+    {
       path: '/partnerfoot',
       name: 'partnerfoot',
       component: partnerfoot
     },
-    
-     // 社群头部
-     {
+
+    // 社群头部
+    {
       path: '/communityhead',
       name: 'communityhead',
       component: communityhead
     },
-    
+
     // 商品列表
     {
       path: '/product/productlist',
@@ -440,8 +443,8 @@ export default new Router({
       name: 'buyIn',
       component: buyIn
     },
-     // B模式-购物车-提交订单
-     {
+    // B模式-购物车-提交订单
+    {
       path: '/patternb/seAccout',
       name: 'seAccout',
       component: seAccout
@@ -464,14 +467,14 @@ export default new Router({
       name: 'myasselpool',
       component: myasselpool
     },
-     // 合伙人
-     {
+    // 合伙人
+    {
       path: '/partner/partner_all',
       name: 'partner_all',
       component: partner_all
     },
-     // 社群-@我
-     {
+    // 社群-@我
+    {
       path: '/community/aboutMe',
       name: 'aboutMe',
       component: aboutMe
@@ -479,33 +482,44 @@ export default new Router({
     ,
     // 社群-评论
     {
-     path: '/community/comment',
-     name: 'comment',
-     component: comment
-   }
-   ,
+      path: '/community/comment',
+      name: 'comment',
+      component: comment
+    }
+    ,
     // 社群-通知
     {
-     path: '/community/inform',
-     name: 'inform',
-     component: inform
-   }
-   ,
-   // 社群-通知详情
-   {
-    path: '/community/informdetail',
-    name: 'informdetail',
-    component: informdetail
-  },
-   // 社群-发帖
-   {
-    path: '/community/sendMsg',
-    name: 'sendMsg',
-    component: sendMsg
-  },
-  
-   
+      path: '/community/inform',
+      name: 'inform',
+      component: inform
+    }
+    ,
+    // 社群-通知详情
+    {
+      path: '/community/informdetail',
+      name: 'informdetail',
+      component: informdetail
+    },
+    // 社群-发帖
+    {
+      path: '/community/sendMsg',
+      name: 'sendMsg',
+      component: sendMsg
+    },
+    // 店铺申请
+    {
+      path: '/storeman/storemanindex',
+      name: 'storemanindex',
+      component: storemanindex
+    },
+    // 店铺申请-产品管理
+    {
+      path: '/storeman/proman',
+      name: 'proman',
+      component: proman
+    },
     
+
+
   ]
 })
-     

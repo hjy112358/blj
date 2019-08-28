@@ -1,0 +1,491 @@
+.storemanlist{
+    margin-top:1rem;
+    background:#fff
+}
+.storemanTitle{
+    height: 3rem;
+    line-height: 3rem;
+    padding:0 1.5rem;
+    border-bottom:2px solid #e7e8ed
+}
+.storemanTitle p{
+    color:#2e2e2e;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 0.85rem;
+}
+.storemanTitle p:before{
+    content:'';
+    position: absolute;
+    top:1rem;
+    left:0;
+    background:#ff4c4c;
+    width:0.3rem;
+    height:1rem;
+}
+.storemanTitle img,.demo img{
+    width:0.7rem;
+    height:1rem
+}
+.demo img{
+    margin-left: 0.5rem
+}
+.recommend{
+    padding-top:1rem;
+}
+.recommend ul li{
+    float:left;
+    width:25%;
+    text-align: center;
+    margin-bottom:1rem;
+}
+.recommend ul li img{
+    width:70px;
+    height: 70px;
+}
+.recommend ul li p{
+    color:#494949;
+    font-size: 26px;
+    padding-top:0.7rem
+}
+.scaletype ul li{
+    width:33%;
+    float:left;
+    text-align: center;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+.scaletype ul li p{
+    padding-top:1rem;
+    font-size: 26px;
+    color: #494949;
+}
+
+.stockborder{
+    border-left:2px solid #e8e9ee;
+    border-right:2px solid #e8e9ee;
+}
+.limit{
+    background:#ff4c4c;
+    height: 5rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 1rem;
+}
+.limitbox{
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.limit span{
+    font-size:1rem; 
+    
+}
+.limit p{
+    font-size: 1.25rem;
+    margin-top:0.5rem;
+}
+/* 新订单 */
+.orderhead {
+    background:#fff;
+    height:4.5rem;
+    line-height: 4.5rem;
+}
+.orderhead div{
+    display: inline-block;
+    width:49%;
+    text-align: center
+}
+.orderhead div a{
+    width:7rem;
+    margin:0 auto;
+    color:#666666;
+    font-size:1.4rem;
+}
+.orderhead div.on a{
+    color:#ff4c4c;
+    border-bottom:3px solid #ff4c4c;
+    height: 4.1rem;
+    line-height: 4.1rem;
+}
+
+.nomsg {
+    text-align: center;
+    padding-top:13.5rem
+}
+.nomsg img{
+    width: 13.9rem;
+    height: 17.1rem;
+}
+.contentlist{
+    margin-top:1rem;
+    background:#fff;
+}
+.contentlist ul li{
+    margin-left: 1rem;
+    padding-right: 1rem;
+    border-bottom:1px solid #8d8d8d
+}
+.contentlist ul li a{
+    height: 7.5rem;
+    
+}
+.contentlist ul li img{
+    width:4.5rem;
+    height: 4.5rem;
+    border-radius: 1rem
+}
+.contentdetail{
+    max-width: 25rem;
+    margin-left: 1rem;
+}
+.contentname{
+    color:#252424;
+    font-size:1.6rem;
+}
+.contentext{
+    color:#8d8d8d;
+    font-size: 1.3rem;
+    margin-top:0.5rem
+}
+.contime{
+    color:#8d8d8d;
+    font-size:1.3rem
+}
+.contentnum{
+    width:1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    background:#ff4c4c;
+    color:#fff;
+    border-radius: 50%;
+    font-size:1rem;
+    float:right;
+    margin-top:0.5rem
+}
+
+
+/* 产品管理 */
+.headbg{
+    width:100%;
+    height: 19.5rem;
+    position: fixed;
+    top:0;
+    left:0;
+    background:url("../../images/storeman/top.png") no-repeat;
+    background-size: 100%;
+    background-position: 0 -1.8rem;
+}
+.promantwo .storemanlist {
+    position: relative;
+    z-index: 2;
+    background: inherit;
+    margin: 0 1rem;
+}
+.promantwo .formup{
+    border-radius: 1rem;
+}
+.newmold{
+    background:#fff;
+    border-radius: 1rem;
+    margin-top:2rem;
+    margin-bottom:1rem;
+}
+.newmold .storemanTitle{
+    border-bottom:0
+}
+.inventory{
+    padding:0 1.5rem;
+}
+.inventory ul li{
+    height:4rem;
+    line-height: 4rem;
+    border-bottom: 1px dashed #e5e5e5;
+    padding-left:1.5rem;
+}
+.inventory ul li p{
+    color:#4c4c4c;
+    font-size:1.4rem
+}
+
+.inventory ul li:last-child{
+    margin-bottom:1.5rem
+}
+.del-btnicon{
+    width:2rem;
+}
+.del-btnicon img{
+    max-width: 100%;
+}
+/* 订单处理 */
+.detalorderhead{
+    margin:1rem 0;
+}
+.detalorderhead ul li {
+    float:left;
+    width:25%;
+    text-align: center;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.detalorderhead ul li a{
+    color:#0b0b0b;
+    font-size: 1.4rem;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.detalorderhead ul li.on a{
+    color:#ff4c4c;
+    border-bottom:1px solid #ff4c4c
+}
+
+.detalorderlist ul li{
+    background:#fff;
+    margin-bottom:0.5rem;
+    padding:1.5rem 2rem;
+
+
+}
+.detalorderlist ul li a>div{
+    margin-bottom:1rem;
+}
+.ordernum{
+    color:#9f9f9f;
+    font-size: 0.8rem;
+}
+.orderstatus{
+    color:#ff4c4c;
+    font-size: 1.2rem;
+}
+.proname{
+    color:#1e1d1d;
+    font-size:1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 2.6rem;
+    line-height: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.promodel{
+    color:#9b9b9b;
+    font-size: 1.1rem;
+}
+.proprice{
+    font-size:1.5rem;
+    color:#ff4c4c;
+    margin-bottom: 0.8rem;
+}
+.procount{
+    color:#9b9b9b;
+    font-size: 1.1rem
+}
+.prototal{
+    color:#9b9b9b;
+    font-size: 1rem;
+}
+.prototal span{
+    font-size:1.3rem;
+    color:#000;
+
+}
+.btnlist{
+    margin-top:2rem;
+}
+.btnlist a{ 
+    display: inline;
+}
+.btn{
+    padding:0.5rem 1.5rem;
+    background:#ff4c4c;
+    color:#fff !important;
+    border-radius: 2rem
+}
+.del{
+    color:#969696 !important;
+    font-size:1.2rem;
+    padding:0 0.5rem;
+}
+.proimg{
+    width:5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-right: 1.5rem;
+}
+.proimg img{
+    max-width:100%
+}
+.text-r{
+    text-align: right
+}
+.prodetail{
+    max-width: 19rem;
+}
+
+/* 发货方式选择 */
+.mark{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    background:rgba(0,0,0,.2)
+}
+.mark .promethod{
+    width:80%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    border-radius:1rem;
+    padding:1rem;
+}
+.promethod h3{
+    color:#4d5b7e;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    height: 4rem;;
+    text-align:center;
+   
+}
+.orderfa .formlist{
+    border-bottom: 0;
+}
+.orderfa .formlist input{
+    border:1px solid #d3d6dd
+}
+.orderfa .formlist .layui-input-inline{
+    margin-right: 0;
+    width:17rem;
+}
+.orderfa .ordernumtext input{
+    width:16.6rem;;
+    padding-right: 0.2rem
+}
+.ordernumtext{
+    margin-top:0.5rem;
+}
+.orderfa  .layui-form-select dl dd.layui-this{
+    background:#ccc
+}
+.probtn {
+    text-align:center;
+    margin-top:2rem;
+    margin-bottom:1rem
+}
+.probtn a{
+    width:45%;
+    display:block;
+    float:left;
+    height:3rem;
+    line-height: 3rem;
+    text-align: center
+}
+.probtn a.prosure{
+    margin-left:4%;
+    background:#ff4c4c;
+    color:#fff !important;
+    border:1px solid #ff4c4c
+}
+.probtn a.cancle{
+    border:1px solid #ff4c4c;
+    color:#ff4c4c;
+    margin-left: 3%;
+}
+.orderfa .layui-layer-btn .layui-layer-btn0{
+    border:1px solid #ff4c4c;
+    background:#ff4c4c;
+    color:#fff
+}
+
+
+.promantwo .layui-layer-btn .layui-layer-btn0{
+    background:#ff4c4c;
+    color:#fff !important;
+    border:1px solid #ff4c4c
+}
+.promantwo .layui-layer-btn1{
+    border:1px solid #ff4c4c;
+    color:#ff4c4c;
+    margin-left: 3%;
+}
+
+
+/* 刷脸返利 */
+.rebate{
+    background:url("../../images/storeman/bg.jpg") no-repeat;
+    background-size:100%;
+    background-position: 0 -5rem;
+}
+.rebateformlist{
+    background:url("../../images/storeman/formbg.png") no-repeat;
+    background-size:100% 3rem;
+    height:3rem;
+    width:20.5rem;
+    margin:0 auto;
+    margin-bottom:2rem
+}
+.rebate form{
+    margin-top:45rem;
+}
+.rebateformlist img{
+    width:1rem;
+    height:1.8rem;
+    margin-left:1.5rem;
+}
+.rebateformlist .money{
+    width:1.45rem;
+    height:1.55rem;
+    margin-left:1.4rem
+}
+.rebateformlist input{
+    margin-left: 2rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    height: 3rem;
+    line-height: 3rem;
+    color: #fff;
+}
+.rebatebtn{
+    display:block;
+    width:20.5rem;
+    height:2.95rem;
+    background:url("../../images/storeman/btnbg.png") no-repeat;
+    background-size:100% 2.95rem;
+    text-align:center;
+    color:#010a16;
+    font-size:1.5rem;
+    line-height: 2.95rem;
+    margin:0 auto
+}
+/* 订单列表 */
+.paylist {
+    background:#f2f2f2
+}
+.paylist .storemanTitle{
+    background:#fff;
+    margin-top:1rem;
+}
+.payorderlist{
+    padding:1.5rem 2rem;
+    background:#fff
+}
+
+.payorderlist ul li p{
+    color:#2e2e2e;
+    font-size: 1.4rem;
+    width:20%;
+    float:left;
+    height: 3rem;
+    line-height: 3rem;
+    overflow: hidden;
+}

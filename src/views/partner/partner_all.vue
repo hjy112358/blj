@@ -7,12 +7,12 @@
             <img :src="goods.original_img" alt />
           </div>
           <div class="goodmsg">
-            <p class="font-11 colb3" style="line-height: 15px;text-align:left">{{goods.goods_name}}</p>
-            <p class="font-13 colb3">{{goods.keywords}}</p>
+            <p class="font-12 colb3" style="text-align:left">{{goods.goods_name}}</p>
+            <p class="font-14 colb3">{{goods.keywords}}</p>
             <div class="discoutmsg flex jus-between align-c">
-              <p class="price font-10">
+              <p class="price font-12">
                 ￥
-                <span class="font-17 font-bold">{{goods.shop_price}}</span>
+                <span class="font-18 font-bold">{{goods.shop_price}}</span>
               </p>
               <p class="inventory">库存{{goods.store_count}}</p>
               <a href="javascript:void(0)" class="font-10 battle">马上抢</a>
@@ -28,9 +28,9 @@
                 <img :src="part.original_img" alt />
               </div>
               <div class="discoutmsg flex jus-between align-c">
-                <p class="price font-10">
+                <p class="price font-12">
                   ￥
-                  <span class="font-17 font-bold">{{part.shop_price}}</span>
+                  <span class="font-18 font-bold">{{part.shop_price}}</span>
                 </p>
                 <p class="inventory">库存{{part.store_count}}</p>
                 <a href="javascript:void(0)" class="font-10 battle">马上抢</a>

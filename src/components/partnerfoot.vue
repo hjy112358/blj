@@ -5,19 +5,19 @@
         <li @click="goindex()">
           <a href="javascript:void(0)">
             <img src="../assets/images/public/storeindex.png" alt width="17" height="17" />
-            <p class="font-18">首页</p>
+            <p class="font-16">首页</p>
           </a>
         </li>
         <li @click="partall()">
           <a href="javascript:void(0)">
             <img src="../assets/images/public/allgoods.png" alt width="15" height="17" />
-            <p class="font-18">全部宝贝</p>
+            <p class="font-16">全部宝贝</p>
           </a>
         </li>
         <li class="contractCus" @click="contact()">
           <a href="javascript:void(0)">
             <img src="../assets/images/public/serviceFoot.png" alt width="18" height="17" />
-            <p class="font-18">联系客服</p>
+            <p class="font-16">联系客服</p>
           </a>
         </li>
       </ul>
