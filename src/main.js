@@ -5,7 +5,8 @@ import App from './App'
 import router from './router'
 import VueLazyload from 'vue-lazyload'
 // import VueTouch from 'vue-touch'
-import { RadioGroup, Radio,Cell,CellGroup,Swipe, SwipeItem,Stepper,Progress,Rate,Button,SwipeCell,Uploader} from "vant";
+import { RadioGroup, Radio,Cell,CellGroup,Swipe, SwipeItem,Stepper,Progress,Rate,Button,SwipeCell,Uploader,
+  } from "vant";
 
 
 

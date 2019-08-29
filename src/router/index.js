@@ -88,6 +88,14 @@ import sendMsg from '@/views/community/sendMsg'
 // 店铺申请
 import storemanindex from '@/views/storeman/storemanindex'
 import proman from '@/views/storeman/proman'
+import promantwo from '@/views/storeman/promantwo'
+import limitRecharge from '@/views/storeman/limitRecharge'
+import rebate from '@/views/storeman/rebate'
+import paylist from '@/views/storeman/paylist'
+import alldetalorder from '@/views/storeman/alldetalorder'
+import detalorderPend from '@/views/storeman/detalorderPend'
+import detalorderFa from '@/views/storeman/detalorderFa'
+import detalorderProced from '@/views/storeman/detalorderProced'
 
 
 
@@ -518,8 +526,56 @@ export default new Router({
       name: 'proman',
       component: proman
     },
-    
-
-
+     // 店铺申请-产品管理-第二步
+     {
+      path: '/storeman/promantwo',
+      name: 'promantwo',
+      component: promantwo
+    },
+    // 店铺申请-充值
+    {
+      path: '/storeman/limitRecharge',
+      name: 'limitRecharge',
+      component: limitRecharge
+    },
+    // 店铺申请-刷脸返利
+    {
+      path: '/storeman/rebate',
+      name: 'rebate',
+      component: rebate
+    },
+    // 店铺申请-刷脸支付订单
+    {
+      path: '/storeman/paylist',
+      name: 'paylist',
+      component: paylist
+    },
+    // 店铺申请-店铺订单-全部
+    {
+      path: '/storeman/alldetalorder',
+      name: 'alldetalorder',
+      component: alldetalorder
+    },
+    // 店铺申请-店铺订单-待处理
+    {
+      path: '/storeman/detalorderPend',
+      name: 'detalorderPend',
+      component: detalorderPend
+    }
+    ,
+    // 店铺申请-店铺订单-待发货
+    {
+      path: '/storeman/detalorderFa',
+      name: 'detalorderFa',
+      component: detalorderFa
+    }
+    ,
+    // 店铺申请-店铺订单-已处理
+    {
+      path: '/storeman/detalorderProced',
+      name: 'detalorderProced',
+      component: detalorderProced
+    }
+  
   ]
 })

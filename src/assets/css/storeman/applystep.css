@@ -1,0 +1,243 @@
+.applybox{
+    margin-top:30px
+}
+.stepbox{
+    background:#fff;
+    margin: 0 20px;
+    padding: 0 20px;
+    border-radius: 20px;
+    margin-top:30px
+}
+.formlist p,.formup label{
+    font-size: 24px;
+    color:#333333;
+    margin-left:10px
+}
+.formlist p span{
+    margin-left:-6px
+}
+.formlist{
+    height: 90px;
+    line-height: 90px;
+    border-bottom:2px solid #e8ebf2;
+    padding:0 40px;
+    background:#fff;
+
+}
+.formlist input{
+    font-size: 24px;
+    height: 88px;
+    line-height: 88px;
+    text-align: right;
+    border:0
+}
+.upimgbox{
+    width: 180px;
+    height: 160px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    vertical-align: middle;
+    background: #fff;
+    z-index:-1;
+    overflow: hidden;
+}
+.upimgbox img{
+    max-width: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.imgbox{
+    display: inline-block;
+    width: 180px;
+    height: 160px;
+    border: 2px dashed #848585;
+    text-align: center;
+}
+.imgbox img{
+    margin-top: 40px;
+    margin-bottom:20px;
+    width:45px;
+    height:35px;
+}
+.imgbox p{
+    color:#6c6c6c;
+    font-size:10px
+}
+.formup {
+    padding:30px 40px;
+    background:#fff;
+    border-bottom:2px solid #e8ebf2;
+}
+#imgbtn1{
+    margin-left: 40px
+}
+.nextstep{
+    width:500px;
+    height:70px;
+    line-height:70px;
+    text-align: center;
+    color:#fff !important;
+    display: block;
+    border-radius:40px;
+    margin:0 auto;
+    font-size: 30px;
+    margin-top:100px;
+}
+.formlist .layui-input-inline{
+    margin-right: -20px;
+    
+}
+.topmargin{
+    height:30px;
+    background:#f2f2f2;
+    width:100%
+}
+.stepbox{
+    padding:0 40px;
+}
+.stepbox h3{
+    font-size: 24px;
+    padding-top:30px;
+    padding-bottom:50px
+}
+.checkimg {
+    width:1.5px;
+    height: 30px;
+    
+}
+.stepbox input[type=checkbox],
+.stepbox input[type=radio] {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;   
+}    
+ 
+.stepbox input[type=checkbox]::before,
+.stepbox input[type=radio]::before {
+	content: '';
+	position: absolute;
+    top: -5px;
+    left: -8px;
+	width:40px;
+    height: 40px;
+    background:url("../../images/storeman/check.jpg") no-repeat;
+    background-size:100%;
+    
+}
+ 
+.stepbox input[type=checkbox]:checked::before,
+.stepbox input[type=radio]:checked::before {
+	color: white;
+    background:url("../../images/storeman/checked.jpg") no-repeat;
+    content: '';
+    background-size:100%;
+}
+.stepbox ul li{
+    padding-bottom:30px;
+}
+.stepbox ul li p{
+    margin-left: 25px;
+    font-size: 30px;
+    color:#2e2a27
+}
+.surebtn{
+    margin-top:400px;
+}
+
+/* 等待审核 */
+.wait {
+    background:url("../../images/storeman/auditbg.jpg");
+    background-size:100% 670px; 
+    height:670px; 
+    text-align:center;
+}
+
+.waitbg{
+    background:#fff
+}
+.wait img{
+    width:318px;
+    height: 318px;
+}
+.wait p{
+    color:#fff;
+    font-size: 42px;
+    font-weight: bold
+}
+.tip{
+    text-align: center;
+    padding-top:6px
+}
+.tip h3{
+    color:#333333;
+    font-size:28px;
+    font-weight: normal
+}
+.tip p{
+    color:#999999;
+    font-size:24px;
+    line-height: 30px;
+}
+#backindex{
+    display: block;
+    width:60%;
+    height: 60px;
+    line-height: 60px;
+    color:#fff;
+    background:#ff4c4c;
+    border-radius: 30px;
+    margin:0 auto;
+    margin-top:100px;
+}
+.pricebox{
+    background:#fff;
+    padding: 0 40px;
+    margin-top:30px
+}
+.stepbox h3,.pricebox h3{
+    color:#333333;
+    font-size: 28px;
+    font-weight: normal
+} 
+
+.pricebox h3{
+    padding:30px 0
+}
+.pricebox ul li{
+    width:30%;
+    float:left;
+    height: 88px;
+    line-height:  88px;
+    border:2px solid #959595;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 4%;
+    margin-bottom:30px
+}
+.pricebox ul li p{
+    color:#333333;
+    font-size:24px
+}
+.pricebox ul li:nth-child(3n+0){
+    margin-right:0
+}
+.pricebox ul li.on{
+    border-color: #ff4c4c
+
+}
+.pricebox ul li.on p{
+    color:#ff4c4c
+}
+#price{
+    width:90%;
+    border:2px solid #d2d2d2;
+    height: 58px;
+    line-height:  58px;
+    text-align: center;
+}

@@ -13,26 +13,26 @@
             </div>
             <div class="recommend">
                 <ul class="clearfix">
-                    <li>
-                        <a href="{:url('storeman/proman')}">
+                    <li @click="proman()">
+                        <a href="javascript:void(0)">
                             <img src="../../assets/images/storeman/proman.png" alt="">
                             <p>产品管理</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="{:url('storeman/proman')}">
+                    <li @click="proman()">
+                        <a href="javascript:void(0)">
                             <img src="../../assets/images/storeman/upload.png" alt="">
                             <p>上传产品</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="{:url('storeman/limitRecharge')}">
+                    <li @click="limitRecharge()">
+                        <a href="javascript:void(0)">
                             <img src="../../assets/images/storeman/inventory.png" alt="">
                             <p>充值</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="{:url('storeman/rebate')}">
+                    <li @click="rebate()">
+                        <a href="javascript:void(0)">
                             <img src="../../assets/images/storeman/rebate.png" alt="">
                             <p>刷脸返利</p>
                         </a>
@@ -72,8 +72,8 @@
             </div>
             <div class="scaletype">
                 <ul class="clearfix">
-                    <li>
-                        <a href="{:url('storeman/paylist')}">
+                    <li @click="paylist()">
+                        <a href="javascript:void(0)">
                             <img src="../../assets/images/storeman/scaleorder.png" alt=""
                                 style="width:29px;height:29px">
                             <p style="margin-top:-4px">刷脸支付订单</p>
@@ -152,6 +152,20 @@ export default {
     window.document.body.style.backgroundColor = "";
     next();
   },
+  methods:{
+      proman:function(){
+          this.$router.push("/storeman/proman")
+      },
+      limitRecharge:function(){
+          this.$router.push("/storeman/limitRecharge")
+      },
+      rebate:function(){
+          this.$router.push("/storeman/rebate")
+      },
+      paylist:function(){
+          this.$router.push("/storeman/paylist")
+      }
+  }
 };
 </script>
 
