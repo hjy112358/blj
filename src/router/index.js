@@ -53,6 +53,7 @@ import storeindex from '@/views/store/storeindex'
 import storeall from '@/views/store/storeall'
 import mycollect from '@/views/store/mycollect'
 import intereststore from '@/views/store/intereststore'
+import wait from '@/views/store/wait'
 // 订单
 import allorder from '@/views/order/allorder'
 import order_daifa from '@/views/order/order_daifa'
@@ -96,6 +97,12 @@ import alldetalorder from '@/views/storeman/alldetalorder'
 import detalorderPend from '@/views/storeman/detalorderPend'
 import detalorderFa from '@/views/storeman/detalorderFa'
 import detalorderProced from '@/views/storeman/detalorderProced'
+import payface from '@/views/storeman/payface'
+import neworder from '@/views/storeman/neworder'
+import allorders from '@/views/storeman/allorders'
+import putaway from '@/views/storeman/putaway'
+import soldout from '@/views/storeman/soldout'
+
 
 
 
@@ -337,7 +344,13 @@ export default new Router({
       path: '/store/intereststore',
       name: 'intereststore',
       component: intereststore
-    }, //全部订单
+    }, 
+    // 店铺审核
+    {
+      path: '/store/wait',
+      name: 'wait',
+      component: wait
+    },//全部订单
     {
       path: '/order/allorder',
       name: 'allorder',
@@ -526,8 +539,8 @@ export default new Router({
       name: 'proman',
       component: proman
     },
-     // 店铺申请-产品管理-第二步
-     {
+    // 店铺申请-产品管理-第二步
+    {
       path: '/storeman/promantwo',
       name: 'promantwo',
       component: promantwo
@@ -575,7 +588,38 @@ export default new Router({
       path: '/storeman/detalorderProced',
       name: 'detalorderProced',
       component: detalorderProced
-    }
-  
+    },
+    // 刷脸支付
+    {
+      path: '/storeman/payface',
+      name: 'payface',
+      component: payface
+    },
+    //订单处理=未读
+    {
+      path: '/storeman/neworder',
+      name: 'neworder',
+      component: neworder
+    },
+    //订单处理=全部
+    {
+      path: '/storeman/allorders',
+      name: 'allorders',
+      component: allorders
+    },
+    //店铺商品已上架
+    {
+      path: '/storeman/putaway',
+      name: 'putaway',
+      component: putaway
+    },
+    //店铺商品已下架
+    {
+      path: '/storeman/soldout',
+      name: 'soldout',
+      component: soldout
+    },
+ 
+    
   ]
 })

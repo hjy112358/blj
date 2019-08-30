@@ -1,0 +1,21 @@
+
+.promotionlist{
+    margin-top:280px
+}
+.promotebtn a{
+    width:180px;
+}
+.promotebtn{
+    margin-top:20px
+}
+.promotebox .promoteimg {
+    position: relative;
+}
+.promotebox .promoteimg img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+a:hover,a:active{
+    color:#fff !important
+}

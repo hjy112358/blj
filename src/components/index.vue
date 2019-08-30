@@ -51,10 +51,10 @@
               <span>品牌街</span>
             </a>
           </li>
-          <li>
+          <li @click="payface()">
             <a href="javascript:void(0)">
-              <img alt="一元购" src="../assets/images/index/one.png">
-              <span>合约消费</span>
+              <img alt="刷脸支付" src="../assets/images/index/payface.png">
+              <span>刷脸支付</span>
             </a>
           </li>
           <li @click="partnerall()">
@@ -424,6 +424,9 @@ export default {
     },
     community:function(){
       this.$router.push('/community/aboutMe')
+    },
+    payface:function(){
+      this.$router.push("/storeman/payface")
     }
 
   },

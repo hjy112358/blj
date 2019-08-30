@@ -524,3 +524,19 @@
     margin-left:10%;
 
 }
+
+/* 上下架 */
+.updownbtn{
+    width:100px;
+    height: 50px !important;
+    line-height: 50px;
+    background:#ff4c4c;
+    font-size:22px;
+    color:#fff !important;;
+    text-align:center;
+    display: block;
+    border-radius:10px;
+}
+.updown ul li{
+    height:150px;
+}
